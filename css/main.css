@@ -1,0 +1,280 @@
+/*
+stylus -w sty/main.styl -o css/.  
+*/
+body {
+  font: 62.5%/1.4em arial, helvetica, sans-serif;
+  color: #999;
+}
+.clear {
+  zoom: 1;
+}
+.clear:before,
+.clear:after {
+  content: "";
+  display: table;
+}
+.clear:after {
+  clear: both;
+}
+.rate {
+  border: 0.1em solid #c8c8c8;
+  min-height: 30em;
+  width: 50em;
+  background-color: #f7f7f8;
+}
+.rate > .topcopy {
+  float: left;
+  width: 20em;
+  margin: 0.5em;
+}
+.rate > .buttons {
+  float: right;
+  margin: 0.5em 0;
+}
+.rate > .buttons > .button {
+  cursor: pointer;
+  float: left;
+  width: 8em;
+  -webkit-box-shadow: 0.1em 0.2em 0.3em rgba(0,0,0,0.5);
+  box-shadow: 0.1em 0.2em 0.3em rgba(0,0,0,0.5);
+  -webkit-border-radius: 0.1em;
+  border-radius: 0.1em;
+  margin: 0 0.5em;
+  text-align: center;
+  padding: 0.5em;
+  background: -webkit-linear-gradient(top, #f3f3f3 50%, #c6c6c6 100%);
+  background: -moz-linear-gradient(top, #f3f3f3 50%, #c6c6c6 100%);
+  background: -o-linear-gradient(top, #f3f3f3 50%, #c6c6c6 100%);
+  background: -ms-linear-gradient(top, #f3f3f3 50%, #c6c6c6 100%);
+  background: linear-gradient(to bottom, #f3f3f3 50%, #c6c6c6 100%);
+  font-size: 1.2em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: box-shadow 0.1s ease-in-out, margin 0.1s ease-in-out;
+  -moz-transition: box-shadow 0.1s ease-in-out, margin 0.1s ease-in-out;
+  -o-transition: box-shadow 0.1s ease-in-out, margin 0.1s ease-in-out;
+  -ms-transition: box-shadow 0.1s ease-in-out, margin 0.1s ease-in-out;
+  transition: box-shadow 0.1s ease-in-out, margin 0.1s ease-in-out;
+}
+.rate > .buttons > .button.active {
+  background: -webkit-linear-gradient(top, #bfdef3 1%, #5ea6e5 99%);
+  background: -moz-linear-gradient(top, #bfdef3 1%, #5ea6e5 99%);
+  background: -o-linear-gradient(top, #bfdef3 1%, #5ea6e5 99%);
+  background: -ms-linear-gradient(top, #bfdef3 1%, #5ea6e5 99%);
+  background: linear-gradient(to bottom, #bfdef3 1%, #5ea6e5 99%);
+  color: #fff;
+  font-weight: bold;
+}
+.rate > .buttons > .button:active {
+  -webkit-box-shadow: 0.05em 0.1em 0.3em rgba(0,0,0,0.5);
+  box-shadow: 0.05em 0.1em 0.3em rgba(0,0,0,0.5);
+  margin-top: 0.05em;
+  -webkit-transition: box-shadow 0.1s ease-in-out, margin 0.1s ease-in-out;
+  -moz-transition: box-shadow 0.1s ease-in-out, margin 0.1s ease-in-out;
+  -o-transition: box-shadow 0.1s ease-in-out, margin 0.1s ease-in-out;
+  -ms-transition: box-shadow 0.1s ease-in-out, margin 0.1s ease-in-out;
+  transition: box-shadow 0.1s ease-in-out, margin 0.1s ease-in-out;
+}
+.rate > .legend {
+  float: right;
+  border: 0.1em solid #c8c8c8;
+  margin: 1em 2em 0 0;
+}
+.rate > .legend > .zone {
+  margin: 0.2em;
+}
+.rate > .legend > .zone > .color {
+  float: left;
+  width: 1em;
+  height: 1em;
+  margin: 0.2em 0 0 0.2em;
+}
+.rate > .legend > .zone > .color.offpeak {
+  background-color: #89c7de;
+}
+.rate > .legend > .zone > .color.onpeak {
+  background-color: #eebc31;
+}
+.rate > .legend > .zone > .copy {
+  margin: 0 2em 0 1.5em;
+}
+.rate > .title {
+  color: #eebc31;
+  font-size: 1.3em;
+  margin: 1em 10em 1em 2em;
+}
+.rate > .graph {
+  position: relative;
+  margin: 0 3em 0 1em;
+}
+.rate > .graph > .flatrate {
+  position: absolute;
+  top: 6.15em;
+  left: 2.5em;
+  border-bottom: 0.1em solid #c8c8c8;
+  width: 43em;
+}
+.rate > .graph > .leftmeasure {
+  position: absolute;
+  top: 8em;
+  left: -6em;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  border-bottom: 0.1em solid #c8c8c8;
+  width: 12em;
+  padding: 0 0 0 2em;
+}
+.rate > .graph > .inner {
+  height: 15em;
+  position: relative;
+  margin: 0 0 0 2em;
+}
+.rate > .graph > .inner > .zone {
+  float: left;
+  position: absolute;
+  overflow: hidden;
+  bottom: 0;
+}
+.rate > .graph > .inner > .zone.z1 {
+  left: 0;
+  width: 22em;
+  height: 5.4em;
+}
+.rate > .graph > .inner > .zone.z2 {
+  left: 22em;
+  width: 11em;
+  height: 10.8em;
+}
+.rate > .graph > .inner > .zone.z3 {
+  left: 33em;
+  width: 11em;
+  height: 5.4em;
+}
+.rate > .graph > .inner > .zone > .dot {
+  float: left;
+  width: 1.4em;
+  height: 1.4em;
+  margin-left: 0.42em;
+  margin-bottom: 0.42em;
+}
+.rate > .graph > .inner > .zone > .dot.bluedot {
+  background-color: #89c7de;
+}
+.rate > .graph > .inner > .zone > .dot.orangedot {
+  background-color: #eebc31;
+}
+.rate > .graph > .bottommeasure {
+  border-top: 0.1em solid #c8c8c8;
+  margin: 0 0 0 2em;
+}
+.rate > .graph > .bottommeasure > .measure {
+  float: left;
+}
+.rate > .graph > .bottommeasure > .measure > .copy {
+  padding: 0 0 0 1em;
+  border-left: 0.1em solid #c8c8c8;
+}
+.rate > .graph > .bottommeasure > .measure.m1 {
+  width: 22em;
+}
+.rate > .graph > .bottommeasure > .measure.m2 {
+  width: 11em;
+}
+.rate > .graph > .bottommeasure > .measure.m3 {
+  width: 11em;
+}
+.rate > .slider {
+  height: 4em;
+  margin: 2em 3em 0 1em;
+  position: relative;
+}
+.rate > .slider > .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0.1em solid #808285;
+  background-color: #f7f7f8;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-box-shadow: 0.1em 0.2em 0.3em rgba(0,0,0,0.5);
+  box-shadow: 0.1em 0.2em 0.3em rgba(0,0,0,0.5);
+  cursor: grab;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+}
+.rate > .slider > .slide:active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+}
+.rate > .slider > .slide > .inner {
+  position: relative;
+}
+.rate > .slider > .slide > .inner > .pointer {
+  width: 1em;
+  height: 1em;
+  border-top: 0.1em solid #808285;
+  border-left: 0.1em solid #808285;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin: -0.6em auto 0 auto;
+  background-color: #f7f7f8;
+}
+.rate > .slider > .slide > .inner > .price {
+  font-size: 1.5em;
+  color: #89c7de;
+  padding: 0 0.5em;
+}
+.rate > .slider > .slide > .inner > .copy {
+  color: #89c7de;
+}
+.rate > .slider > .slide > .inner > .nav {
+  background-color: #808285;
+}
+.rate > .slider > .slide > .inner {
+  position: relative;
+}
+.rate > .slider > .slide > .inner > .pointer {
+  width: 1em;
+  height: 1em;
+  border-top: 0.1em solid #808285;
+  border-left: 0.1em solid #808285;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin: -0.6em auto 0 auto;
+  background-color: #f7f7f8;
+}
+.rate > .slider > .slide > .inner > .price {
+  font-size: 1.5em;
+  color: #89c7de;
+  padding: 0 0.5em;
+}
+.rate > .slider > .slide > .inner > .copy {
+  color: #89c7de;
+}
+.rate > .slider > .slide > .inner > .nav {
+  background-color: #808285;
+  color: #fff;
+}
+.rate > .slider > .bar {
+  width: 100%;
+  height: 1em;
+  background-color: #c8c8c8;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+  margin-top: 2em;
+}

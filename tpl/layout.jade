@@ -1,0 +1,27 @@
+doctype
+
+html(lang='en')
+  head
+    title !{cfg.meta.title}
+
+    link(rel='stylesheet',href='./css/main.css',type='text/css',media='all')
+    script(type='text/javascript', src='./jst/loader.js')
+
+  body
+    block content
+
+  script(type='text/javascript').
+
+    var scripts = {
+      "./jst/": ["main","pge"],
+      "./jst/lib/": ["jquery.min", "moment", "jquery.drag"]
+    };
+
+    loader.scripts = scripts;
+
+    window.cfg = !{JSON.stringify(cfg)};
+
+    loader.i( function(result) {
+      pge.i();
+    });
+

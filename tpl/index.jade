@@ -1,0 +1,51 @@
+
+//
+  jade -w tpl/index.jade -O cfg/config.json -P  -o .
+
+include mixins
+
+extends layout
+
+block content
+  .rate
+    .topcopy Choose winter or summer.  Drag slider to compare on- and off-peak rates.*
+    .buttons
+      .button Winter Rate
+      .button.active Summer Rate
+    .clear
+
+    .legend
+      .zone
+        .color.offpeak
+        .copy Off-peak
+      .zone
+        .color.onpeak
+        .copy On-peak
+
+    .title A Quick Look at hte Summer AG4A<br /> Time-of-Use Rate for Agricultural Customers
+
+    .graph
+      .leftmeasure Cost per kWh
+      .flatrate Current Flat Rate ($0.234/kWh)
+      .inner
+        .zone.z1
+          +dots('blue', 145)
+        .zone.z2
+          +dots('orange', 100)
+        .zone.z3
+          +dots('blue', 145)
+      .clear
+      .bottommeasure
+        .measure.m1: span.copy 12:00am
+        .measure.m2: span.copy Noon
+        .measure.m3: span.copy 6:00pm
+
+    .slider
+      .slide(draggable=true)
+        .inner
+          .pointer
+          .price $0.163
+          .copy per kWh
+          .nav slide
+      .clear
+      .bar

@@ -1,0 +1,211 @@
+
+/*
+stylus -w sty/main.styl -o css/.  
+*/
+
+vendor-prefixes ?= webkit moz o ms official
+
+@import vendor
+@import clearfix
+@import _vars
+
+body
+  font 62.5%/1.4em arial,helvetica,sans-serif
+  color c_text
+
+.clear
+  clearfix()
+
+.rate
+  border 0.1em solid c_border
+  min-height 30em
+  width 50em
+  background-color c_light
+  > .topcopy
+    float left
+    width 20em
+    margin 0.5em
+  > .buttons
+    float right
+    margin 0.5em 0
+    > .button
+      cursor pointer
+      float left
+      width 8em
+      box-shadow 0.1em 0.2em 0.3em rgba(black, 0.5)
+      border-radius 0.1em
+      margin 0 0.5em
+      text-align center
+      padding 0.5em
+      background linear-gradient(top, c_button_top 50%, c_button_bottom 100%)
+      font-size 1.2em
+      user-select none
+      transition box-shadow 0.1s ease-in-out, margin 0.1s ease-in-out
+      &.active
+        background linear-gradient(top, c_active_top 1%, c_active_bottom 99%)
+        color white
+        font-weight bold
+      &:active
+        box-shadow 0.05em 0.1em 0.3em rgba(black, 0.5)
+        margin-top 0.05em
+        transition box-shadow 0.1s ease-in-out, margin 0.1s ease-in-out
+
+
+  > .legend
+    float right
+    border 0.1em solid c_border
+    margin 1em 2em 0 0
+    > .zone
+      margin 0.2em
+      > .color
+        float left
+        width 1em
+        height 1em
+        margin 0.2em 0 0 0.2em
+        &.offpeak
+          background-color c_blue
+        &.onpeak
+          background-color c_orange
+      > .copy
+        margin 0 2em 0 1.5em
+  > .title
+    color c_orange
+    font-size 1.3em
+    margin 1em 10em 1em 2em
+
+  > .graph
+    position relative
+    margin 0 3em 0 1em 
+    > .flatrate
+      position absolute
+      top 6.15em
+      left 2.5em
+      border-bottom 0.1em solid c_border
+      width 43em
+
+    > .leftmeasure
+      position absolute
+      top 8em 
+      left -6em
+      transform rotate(270deg)
+      border-bottom 0.1em solid c_border
+      width 12em
+      padding 0 0 0 2em
+
+    > .inner
+      height 15em
+      position relative
+      margin 0 0 0 2em
+      > .zone
+        float left
+        position absolute
+        overflow hidden
+        bottom 0
+
+        &.z1
+          left 0
+          width 22em
+          height 5.4em
+        &.z2
+          left 22em
+          width 11em
+          height 10.8em
+        &.z3
+          left 33em
+          width 11em
+          height 5.4em
+
+        > .dot
+          float left
+          width 1.4em
+          height 1.4em
+          margin-left 0.42em
+          margin-bottom 0.42em
+          &.bluedot
+            background-color c_blue
+          &.orangedot
+            background-color c_orange
+
+    > .bottommeasure
+      border-top 0.1em solid c_border
+      margin 0 0 0 2em
+
+      > .measure
+        float left
+        > .copy
+          padding 0 0 0 1em
+          border-left 0.1em solid c_border
+        &.m1
+          width 22em
+        &.m2
+          width 11em
+        &.m3
+          width 11em
+  > .slider
+    height 4em
+    margin 2em 3em 0 1em 
+    position relative
+
+    > .slide
+      position absolute
+      top 0
+      left 0
+      border 0.1em solid c_dark
+      background-color c_light
+      text-align center
+      user-select none
+      box-shadow 0.1em 0.2em 0.3em rgba(black, 0.5)
+      cursor grab
+      cursor -webkit-grab
+      cursor -moz-grab
+      &:active
+        cursor grabbing
+        cursor -webkit-grabbing
+        cursor -moz-grabbing
+      > .inner
+        position relative
+        > .pointer
+          width 1em
+          height 1em
+          border-top 0.1em solid c_dark
+          border-left 0.1em solid c_dark
+          transform rotate(45deg)
+          margin -0.6em auto 0 auto
+          background-color c_light
+
+        > .price
+          font-size 1.5em
+          color c_blue
+          padding 0 0.5em
+        > .copy
+          color c_blue
+        > .nav
+          background-color c_dark
+      > .inner
+        position relative
+        > .pointer
+          width 1em
+          height 1em
+          border-top 0.1em solid c_dark
+          border-left 0.1em solid c_dark
+          transform rotate(45deg)
+          margin -0.6em auto 0 auto
+          background-color c_light
+
+        > .price
+          font-size 1.5em
+          color c_blue
+          padding 0 0.5em
+        > .copy
+          color c_blue
+        > .nav
+          background-color c_dark
+          color white
+
+    > .bar
+      width 100%
+      height 1em
+      background-color c_border
+      border-radius 1em
+      margin-top 2em
+  

@@ -16,22 +16,23 @@ body {
 .clear:after {
   clear: both;
 }
-.rate {
+.rateframe {
+  overflow: hidden;
   border: 0.1em solid #c8c8c8;
   min-height: 30em;
   width: 50em;
   background-color: #f7f7f8;
 }
-.rate > .topcopy {
+.rateframe > .topcopy {
   float: left;
   width: 20em;
   margin: 0.5em;
 }
-.rate > .buttons {
+.rateframe > .buttons {
   float: right;
   margin: 0.5em 0;
 }
-.rate > .buttons > .button {
+.rateframe > .buttons > .button {
   cursor: pointer;
   float: left;
   width: 8em;
@@ -58,7 +59,7 @@ body {
   -ms-transition: box-shadow 0.1s ease-in-out, margin 0.1s ease-in-out;
   transition: box-shadow 0.1s ease-in-out, margin 0.1s ease-in-out;
 }
-.rate > .buttons > .button.active {
+.rateframe > .buttons > .button.active {
   background: -webkit-linear-gradient(top, #bfdef3 1%, #5ea6e5 99%);
   background: -moz-linear-gradient(top, #bfdef3 1%, #5ea6e5 99%);
   background: -o-linear-gradient(top, #bfdef3 1%, #5ea6e5 99%);
@@ -67,7 +68,7 @@ body {
   color: #fff;
   font-weight: bold;
 }
-.rate > .buttons > .button:active {
+.rateframe > .buttons > .button:active {
   -webkit-box-shadow: 0.05em 0.1em 0.3em rgba(0,0,0,0.5);
   box-shadow: 0.05em 0.1em 0.3em rgba(0,0,0,0.5);
   margin-top: 0.05em;
@@ -77,46 +78,58 @@ body {
   -ms-transition: box-shadow 0.1s ease-in-out, margin 0.1s ease-in-out;
   transition: box-shadow 0.1s ease-in-out, margin 0.1s ease-in-out;
 }
-.rate > .legend {
+.rateframe > .rates {
+  position: relative;
+}
+.rateframe > .rates > .rate {
+  margin: 2em 0;
+}
+.rateframe > .rates > .rate.off {
+  display: none;
+}
+.rateframe > .rates > .rate.on {
+  display: block;
+}
+.rateframe > .rates > .rate > .legend {
   float: right;
   border: 0.1em solid #c8c8c8;
   margin: 1em 2em 0 0;
 }
-.rate > .legend > .zone {
+.rateframe > .rates > .rate > .legend > .legendzone {
   margin: 0.2em;
 }
-.rate > .legend > .zone > .color {
+.rateframe > .rates > .rate > .legend > .legendzone > .color {
   float: left;
   width: 1em;
   height: 1em;
   margin: 0.2em 0 0 0.2em;
 }
-.rate > .legend > .zone > .color.offpeak {
+.rateframe > .rates > .rate > .legend > .legendzone > .color.offpeak {
   background-color: #89c7de;
 }
-.rate > .legend > .zone > .color.onpeak {
+.rateframe > .rates > .rate > .legend > .legendzone > .color.onpeak {
   background-color: #eebc31;
 }
-.rate > .legend > .zone > .copy {
+.rateframe > .rates > .rate > .legend > .legendzone > .copy {
   margin: 0 2em 0 1.5em;
 }
-.rate > .title {
+.rateframe > .rates > .rate > .title {
   color: #eebc31;
   font-size: 1.3em;
   margin: 1em 10em 1em 2em;
 }
-.rate > .graph {
+.rateframe > .rates > .rate > .graph {
   position: relative;
   margin: 0 3em 0 1em;
 }
-.rate > .graph > .flatrate {
+.rateframe > .rates > .rate > .graph > .flatrate {
   position: absolute;
   top: 6.15em;
   left: 2.5em;
   border-bottom: 0.1em solid #c8c8c8;
   width: 43em;
 }
-.rate > .graph > .leftmeasure {
+.rateframe > .rates > .rate > .graph > .leftmeasure {
   position: absolute;
   top: 8em;
   left: -6em;
@@ -129,71 +142,71 @@ body {
   width: 12em;
   padding: 0 0 0 2em;
 }
-.rate > .graph > .inner {
+.rateframe > .rates > .rate > .graph > .inner {
   height: 15em;
   position: relative;
   margin: 0 0 0 2em;
 }
-.rate > .graph > .inner > .zone {
+.rateframe > .rates > .rate > .graph > .inner > .zone {
   float: left;
   position: absolute;
   overflow: hidden;
   bottom: 0;
 }
-.rate > .graph > .inner > .zone.z1 {
+.rateframe > .rates > .rate > .graph > .inner > .zone.z1 {
   left: 0;
   width: 22em;
   height: 5.4em;
 }
-.rate > .graph > .inner > .zone.z2 {
+.rateframe > .rates > .rate > .graph > .inner > .zone.z2 {
   left: 22em;
   width: 11em;
   height: 10.8em;
 }
-.rate > .graph > .inner > .zone.z3 {
+.rateframe > .rates > .rate > .graph > .inner > .zone.z3 {
   left: 33em;
   width: 11em;
   height: 5.4em;
 }
-.rate > .graph > .inner > .zone > .dot {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dot {
   float: left;
   width: 1.4em;
   height: 1.4em;
   margin-left: 0.42em;
   margin-bottom: 0.42em;
 }
-.rate > .graph > .inner > .zone > .dot.bluedot {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dot.bluedot {
   background-color: #89c7de;
 }
-.rate > .graph > .inner > .zone > .dot.orangedot {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dot.orangedot {
   background-color: #eebc31;
 }
-.rate > .graph > .bottommeasure {
+.rateframe > .rates > .rate > .graph > .bottommeasure {
   border-top: 0.1em solid #c8c8c8;
   margin: 0 0 0 2em;
 }
-.rate > .graph > .bottommeasure > .measure {
+.rateframe > .rates > .rate > .graph > .bottommeasure > .measure {
   float: left;
 }
-.rate > .graph > .bottommeasure > .measure > .copy {
+.rateframe > .rates > .rate > .graph > .bottommeasure > .measure > .copy {
   padding: 0 0 0 1em;
   border-left: 0.1em solid #c8c8c8;
 }
-.rate > .graph > .bottommeasure > .measure.m1 {
+.rateframe > .rates > .rate > .graph > .bottommeasure > .measure.m1 {
   width: 22em;
 }
-.rate > .graph > .bottommeasure > .measure.m2 {
+.rateframe > .rates > .rate > .graph > .bottommeasure > .measure.m2 {
   width: 11em;
 }
-.rate > .graph > .bottommeasure > .measure.m3 {
+.rateframe > .rates > .rate > .graph > .bottommeasure > .measure.m3 {
   width: 11em;
 }
-.rate > .slider {
+.rateframe > .rates > .rate > .slider {
   height: 4em;
   margin: 2em 3em 0 1em;
   position: relative;
 }
-.rate > .slider > .slide {
+.rateframe > .rates > .rate > .slider > .slide {
   position: absolute;
   top: 0;
   left: 0;
@@ -210,15 +223,15 @@ body {
   cursor: -webkit-grab;
   cursor: -moz-grab;
 }
-.rate > .slider > .slide:active {
+.rateframe > .rates > .rate > .slider > .slide:active {
   cursor: grabbing;
   cursor: -webkit-grabbing;
   cursor: -moz-grabbing;
 }
-.rate > .slider > .slide > .inner {
+.rateframe > .rates > .rate > .slider > .slide > .inner {
   position: relative;
 }
-.rate > .slider > .slide > .inner > .pointer {
+.rateframe > .rates > .rate > .slider > .slide > .inner > .pointer {
   width: 1em;
   height: 1em;
   border-top: 0.1em solid #808285;
@@ -231,21 +244,21 @@ body {
   margin: -0.6em auto 0 auto;
   background-color: #f7f7f8;
 }
-.rate > .slider > .slide > .inner > .price {
+.rateframe > .rates > .rate > .slider > .slide > .inner > .price {
   font-size: 1.5em;
   color: #89c7de;
   padding: 0 0.5em;
 }
-.rate > .slider > .slide > .inner > .copy {
+.rateframe > .rates > .rate > .slider > .slide > .inner > .copy {
   color: #89c7de;
 }
-.rate > .slider > .slide > .inner > .nav {
+.rateframe > .rates > .rate > .slider > .slide > .inner > .nav {
   background-color: #808285;
 }
-.rate > .slider > .slide > .inner {
+.rateframe > .rates > .rate > .slider > .slide > .inner {
   position: relative;
 }
-.rate > .slider > .slide > .inner > .pointer {
+.rateframe > .rates > .rate > .slider > .slide > .inner > .pointer {
   width: 1em;
   height: 1em;
   border-top: 0.1em solid #808285;
@@ -258,19 +271,19 @@ body {
   margin: -0.6em auto 0 auto;
   background-color: #f7f7f8;
 }
-.rate > .slider > .slide > .inner > .price {
+.rateframe > .rates > .rate > .slider > .slide > .inner > .price {
   font-size: 1.5em;
   color: #89c7de;
   padding: 0 0.5em;
 }
-.rate > .slider > .slide > .inner > .copy {
+.rateframe > .rates > .rate > .slider > .slide > .inner > .copy {
   color: #89c7de;
 }
-.rate > .slider > .slide > .inner > .nav {
+.rateframe > .rates > .rate > .slider > .slide > .inner > .nav {
   background-color: #808285;
   color: #fff;
 }
-.rate > .slider > .bar {
+.rateframe > .rates > .rate > .slider > .bar {
   width: 100%;
   height: 1em;
   background-color: #c8c8c8;

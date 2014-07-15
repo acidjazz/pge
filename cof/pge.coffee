@@ -1,25 +1,22 @@
+
 pge =
 
-  moving: false
-  start: 0
-  end: 0
+  i: () ->
 
-  i: ->
-
-    pge.end = $('.slider').width() - ($('.slide').width()/2)
-    pge.start = -$('.slide').width()/2
     pge.handlers()
 
   handlers: ->
-    $('.slide').drag pge.drag
 
-  drag: (ev, dd) ->
+    $('.rateframe > .buttons > .button').click pge.switchrate
+    
+  switchrate: ->
 
     t = $ this
-    x = dd.offsetX
 
-    if x < pge.start || x > pge.end
-      return true
-    t.css(
-      left: x
-    )
+    _.off $('.rate')
+    t.parent().find('.button').removeClass 'active'
+    t.addClass 'active'
+
+    _.on t.data 'rate'
+    rate.i t.data 'rate'
+

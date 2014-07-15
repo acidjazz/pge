@@ -1,26 +1,19 @@
 var pge;
 
 pge = {
-  moving: false,
-  start: 0,
-  end: 0,
   i: function() {
-    pge.end = $('.slider').width() - ($('.slide').width() / 2);
-    pge.start = -$('.slide').width() / 2;
     return pge.handlers();
   },
   handlers: function() {
-    return $('.slide').drag(pge.drag);
+    return $('.rateframe > .buttons > .button').click(pge.switchrate);
   },
-  drag: function(ev, dd) {
-    var t, x;
+  switchrate: function() {
+    var t;
     t = $(this);
-    x = dd.offsetX;
-    if (x < pge.start || x > pge.end) {
-      return true;
-    }
-    return t.css({
-      left: x
-    });
+    _.off($('.rate'));
+    t.parent().find('.button').removeClass('active');
+    t.addClass('active');
+    _.on(t.data('rate'));
+    return rate.i(t.data('rate'));
   }
 };

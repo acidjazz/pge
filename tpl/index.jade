@@ -3,11 +3,8 @@
   jade -w tpl/index.jade -O cfg/config.json -P  -o .
 
 include mixins
-
 extends layout
-
 block content
-
   .rateframe
     .topcopy Choose winter or summer.  Drag slider to compare on- and off-peak rates.*
 
@@ -20,5 +17,5 @@ block content
       .rate.rate_ag4a_summer.on
         include rate_ag4a_summer
       .rate.rate_ag4a_winter.off
-        include rate_ag4a_summer
+        include rate_ag4a_winter
         

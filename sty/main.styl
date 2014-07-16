@@ -73,6 +73,8 @@ body
               background-color c_blue
             &.onpeak
               background-color c_orange
+            &.partialpeak
+              background-color c_partial
           > .copy
             margin 0 2em 0 1.5em
       > .title
@@ -109,29 +111,22 @@ body
             overflow hidden
             bottom 0
 
-            &.z1
-              left 0
-              width 22em
-              height 5.4em
-            &.z2
-              left 22em
-              width 11em
-              height 10.8em
-            &.z3
-              left 33em
-              width 11em
-              height 5.4em
-
             > .dot
               float left
               width 1.4em
               height 1.4em
               margin-left 0.42em
               margin-bottom 0.42em
+              animation dotIn 0.5s 0s ease-in-out both
               &.bluedot
                 background-color c_blue
               &.orangedot
                 background-color c_orange
+              &.partialdot
+                background-color c_partial
+            for r in 1..150
+              .dot:nth-child({r})
+                animation-delay (r / 50)s
 
         > .bottommeasure
           border-top 0.1em solid c_border
@@ -142,12 +137,6 @@ body
             > .copy
               padding 0 0 0 1em
               border-left 0.1em solid c_border
-            &.m1
-              width 22em
-            &.m2
-              width 11em
-            &.m3
-              width 11em
       > .slider
         height 4em
         margin 2em 3em 0 1em 
@@ -158,6 +147,7 @@ body
           top 0
           left 0
           border 0.1em solid c_dark
+          animation slideIn 0.5s ease-in-out both
           background-color c_light
           text-align center
           user-select none
@@ -165,10 +155,13 @@ body
           cursor grab
           cursor -webkit-grab
           cursor -moz-grab
+          transition transform 0.2s ease-in-out
           &:active
             cursor grabbing
             cursor -webkit-grabbing
             cursor -moz-grabbing
+            transform scale(1.2, 1.2)
+            transition transform 0.2s ease-in-out
           > .inner
             position relative
             > .pointer
@@ -216,3 +209,66 @@ body
           border-radius 1em
           margin-top 2em
       
+
+
+.rate_ag4a_summer > .graph > .inner > .zone
+  &.z1
+    left 0
+    width 22em
+    height 5.4em
+  &.z2
+    left 22em
+    width 11em
+    height 10.8em
+  &.z3
+    left 33em
+    width 11em
+    height 5.4em
+
+.rate_ag4a_summer > .graph > .bottommeasure > .measure
+  &.m1
+    width 22em
+  &.m2
+    width 11em
+  &.m3
+    width 11em
+
+.rate_ag4a_winter > .graph > .inner > .zone
+  &.z1
+    left 0
+    width 14.6em
+    height 3.6em
+  &.z2
+    left 14.6em
+    width 24em
+    height 5.4em
+  &.z3
+    left 38.6em
+    width 5.4em
+    height 3.6em
+
+.rate_ag4a_winter > .graph > .bottommeasure > .measure
+  &.m1
+    width 14.6em
+  &.m2
+    width 24em
+  &.m3
+    width 5.4em
+
+@keyframes dotIn
+  from
+    transform translate(5em, 0)
+    opacity 0
+  to
+    opacity 1
+    transform translate(0px, 0)
+
+@keyframes slideIn
+  from
+    transform translate(20em, 0), scale(1)
+    opacity 0
+  to
+    opacity 1
+    transform translate(0em, 0), scale(1)
+
+

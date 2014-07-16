@@ -105,19 +105,19 @@ body {
   margin: 0.2em 0 0 0.2em;
 }
 .rateframe > .rates > .rate > .legend > .legendzone > .color.offpeak {
-  background-color: #89c7de;
+  background-color: #29b1db;
 }
 .rateframe > .rates > .rate > .legend > .legendzone > .color.onpeak {
-  background-color: #eebc31;
+  background-color: #faa22b;
 }
 .rateframe > .rates > .rate > .legend > .legendzone > .color.partialpeak {
-  background-color: #d3c791;
+  background-color: #c6b17b;
 }
 .rateframe > .rates > .rate > .legend > .legendzone > .copy {
   margin: 0 2em 0 1.5em;
 }
 .rateframe > .rates > .rate > .title {
-  color: #eebc31;
+  color: #faa22b;
   font-size: 1.3em;
   margin: 1em 10em 1em 2em;
 }
@@ -162,6 +162,11 @@ body {
   height: 1.4em;
   margin-left: 0.42em;
   margin-bottom: 0.42em;
+  -webkit-transition: background 0.2s linear;
+  -moz-transition: background 0.2s linear;
+  -o-transition: background 0.2s linear;
+  -ms-transition: background 0.2s linear;
+  transition: background 0.2s linear;
   -webkit-animation: dotIn 0.5s 0s ease-in-out both;
   -moz-animation: dotIn 0.5s 0s ease-in-out both;
   -o-animation: dotIn 0.5s 0s ease-in-out both;
@@ -169,13 +174,13 @@ body {
   animation: dotIn 0.5s 0s ease-in-out both;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone > .dot.bluedot {
-  background-color: #89c7de;
+  background-color: rgba(41,177,219,0.7);
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone > .dot.orangedot {
-  background-color: #eebc31;
+  background-color: rgba(250,162,43,0.7);
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone > .dot.partialdot {
-  background-color: #d3c791;
+  background-color: rgba(198,177,123,0.7);
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone .dot:nth-child(1) {
   -webkit-animation-delay: 0.02s;
@@ -1227,6 +1232,15 @@ body {
   -ms-animation-delay: 3s;
   animation-delay: 3s;
 }
+.rateframe > .rates > .rate > .graph > .inner > .zone.full > .dot.bluedot {
+  background-color: #29b1db;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone.full > .dot.orangedot {
+  background-color: #faa22b;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone.full > .dot.partialdot {
+  background-color: #c6b17b;
+}
 .rateframe > .rates > .rate > .graph > .bottommeasure {
   border-top: 0.1em solid #c8c8c8;
   margin: 0 0 0 2em;
@@ -1248,11 +1262,11 @@ body {
   top: 0;
   left: 0;
   border: 0.1em solid #808285;
-  -webkit-animation: slideIn 0.5s ease-in-out both;
-  -moz-animation: slideIn 0.5s ease-in-out both;
-  -o-animation: slideIn 0.5s ease-in-out both;
-  -ms-animation: slideIn 0.5s ease-in-out both;
-  animation: slideIn 0.5s ease-in-out both;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
   background-color: #f7f7f8;
   text-align: center;
   -webkit-user-select: none;
@@ -1269,21 +1283,26 @@ body {
   -o-transition: -o-transform 0.2s ease-in-out;
   -ms-transition: -ms-transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
+  -webkit-animation: slideIn 0.5s ease-in-out both;
+  -moz-animation: slideIn 0.5s ease-in-out both;
+  -o-animation: slideIn 0.5s ease-in-out both;
+  -ms-animation: slideIn 0.5s ease-in-out both;
+  animation: slideIn 0.5s ease-in-out both;
 }
-.rateframe > .rates > .rate > .slider > .slide:active {
+.rateframe > .rates > .rate > .slider > .slide:hover {
   cursor: grabbing;
   cursor: -webkit-grabbing;
   cursor: -moz-grabbing;
-  -webkit-transform: scale(1.2, 1.2);
-  -moz-transform: scale(1.2, 1.2);
-  -o-transform: scale(1.2, 1.2);
-  -ms-transform: scale(1.2, 1.2);
-  transform: scale(1.2, 1.2);
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  -moz-transition: -moz-transform 0.2s ease-in-out;
-  -o-transition: -o-transform 0.2s ease-in-out;
-  -ms-transition: -ms-transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: -webkit-transform 0.1s ease-in-out;
+  -moz-transition: -moz-transform 0.1s ease-in-out;
+  -o-transition: -o-transform 0.1s ease-in-out;
+  -ms-transition: -ms-transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
 }
 .rateframe > .rates > .rate > .slider > .slide > .inner {
   position: relative;
@@ -1303,11 +1322,12 @@ body {
 }
 .rateframe > .rates > .rate > .slider > .slide > .inner > .price {
   font-size: 1.5em;
-  color: #89c7de;
+  color: #29b1db;
   padding: 0 0.5em;
+  font-weight: bold;
 }
 .rateframe > .rates > .rate > .slider > .slide > .inner > .copy {
-  color: #89c7de;
+  color: #29b1db;
 }
 .rateframe > .rates > .rate > .slider > .slide > .inner > .nav {
   background-color: #808285;
@@ -1330,11 +1350,11 @@ body {
 }
 .rateframe > .rates > .rate > .slider > .slide > .inner > .price {
   font-size: 1.5em;
-  color: #89c7de;
+  color: #29b1db;
   padding: 0 0.5em;
 }
 .rateframe > .rates > .rate > .slider > .slide > .inner > .copy {
-  color: #89c7de;
+  color: #29b1db;
 }
 .rateframe > .rates > .rate > .slider > .slide > .inner > .nav {
   background-color: #808285;
@@ -1486,11 +1506,11 @@ body {
 }
 @-moz-keyframes slideIn {
   from {
-    -webkit-transform: translate(20em, 0), scale(1);
-    -moz-transform: translate(20em, 0), scale(1);
-    -o-transform: translate(20em, 0), scale(1);
-    -ms-transform: translate(20em, 0), scale(1);
-    transform: translate(20em, 0), scale(1);
+    -webkit-transform: translate(10em, 0);
+    -moz-transform: translate(10em, 0);
+    -o-transform: translate(10em, 0);
+    -ms-transform: translate(10em, 0);
+    transform: translate(10em, 0);
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity=0);
@@ -1499,20 +1519,20 @@ body {
     opacity: 1;
     -ms-filter: none;
     filter: none;
-    -webkit-transform: translate(0em, 0), scale(1);
-    -moz-transform: translate(0em, 0), scale(1);
-    -o-transform: translate(0em, 0), scale(1);
-    -ms-transform: translate(0em, 0), scale(1);
-    transform: translate(0em, 0), scale(1);
+    -webkit-transform: translate(0em, 0);
+    -moz-transform: translate(0em, 0);
+    -o-transform: translate(0em, 0);
+    -ms-transform: translate(0em, 0);
+    transform: translate(0em, 0);
   }
 }
 @-webkit-keyframes slideIn {
   from {
-    -webkit-transform: translate(20em, 0), scale(1);
-    -moz-transform: translate(20em, 0), scale(1);
-    -o-transform: translate(20em, 0), scale(1);
-    -ms-transform: translate(20em, 0), scale(1);
-    transform: translate(20em, 0), scale(1);
+    -webkit-transform: translate(10em, 0);
+    -moz-transform: translate(10em, 0);
+    -o-transform: translate(10em, 0);
+    -ms-transform: translate(10em, 0);
+    transform: translate(10em, 0);
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity=0);
@@ -1521,20 +1541,20 @@ body {
     opacity: 1;
     -ms-filter: none;
     filter: none;
-    -webkit-transform: translate(0em, 0), scale(1);
-    -moz-transform: translate(0em, 0), scale(1);
-    -o-transform: translate(0em, 0), scale(1);
-    -ms-transform: translate(0em, 0), scale(1);
-    transform: translate(0em, 0), scale(1);
+    -webkit-transform: translate(0em, 0);
+    -moz-transform: translate(0em, 0);
+    -o-transform: translate(0em, 0);
+    -ms-transform: translate(0em, 0);
+    transform: translate(0em, 0);
   }
 }
 @-o-keyframes slideIn {
   from {
-    -webkit-transform: translate(20em, 0), scale(1);
-    -moz-transform: translate(20em, 0), scale(1);
-    -o-transform: translate(20em, 0), scale(1);
-    -ms-transform: translate(20em, 0), scale(1);
-    transform: translate(20em, 0), scale(1);
+    -webkit-transform: translate(10em, 0);
+    -moz-transform: translate(10em, 0);
+    -o-transform: translate(10em, 0);
+    -ms-transform: translate(10em, 0);
+    transform: translate(10em, 0);
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity=0);
@@ -1543,20 +1563,20 @@ body {
     opacity: 1;
     -ms-filter: none;
     filter: none;
-    -webkit-transform: translate(0em, 0), scale(1);
-    -moz-transform: translate(0em, 0), scale(1);
-    -o-transform: translate(0em, 0), scale(1);
-    -ms-transform: translate(0em, 0), scale(1);
-    transform: translate(0em, 0), scale(1);
+    -webkit-transform: translate(0em, 0);
+    -moz-transform: translate(0em, 0);
+    -o-transform: translate(0em, 0);
+    -ms-transform: translate(0em, 0);
+    transform: translate(0em, 0);
   }
 }
 @keyframes slideIn {
   from {
-    -webkit-transform: translate(20em, 0), scale(1);
-    -moz-transform: translate(20em, 0), scale(1);
-    -o-transform: translate(20em, 0), scale(1);
-    -ms-transform: translate(20em, 0), scale(1);
-    transform: translate(20em, 0), scale(1);
+    -webkit-transform: translate(10em, 0);
+    -moz-transform: translate(10em, 0);
+    -o-transform: translate(10em, 0);
+    -ms-transform: translate(10em, 0);
+    transform: translate(10em, 0);
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity=0);
@@ -1565,10 +1585,10 @@ body {
     opacity: 1;
     -ms-filter: none;
     filter: none;
-    -webkit-transform: translate(0em, 0), scale(1);
-    -moz-transform: translate(0em, 0), scale(1);
-    -o-transform: translate(0em, 0), scale(1);
-    -ms-transform: translate(0em, 0), scale(1);
-    transform: translate(0em, 0), scale(1);
+    -webkit-transform: translate(0em, 0);
+    -moz-transform: translate(0em, 0);
+    -o-transform: translate(0em, 0);
+    -ms-transform: translate(0em, 0);
+    transform: translate(0em, 0);
   }
 }

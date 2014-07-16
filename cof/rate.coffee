@@ -2,6 +2,7 @@
 rate =
 
   zones: {}
+  el: {}
   els: {}
   points: {}
   prices: {}
@@ -9,32 +10,30 @@ rate =
 
   i: (name) ->
 
-    console.log name
-
     rate.els[name] = {}
     rate.points[name] = {}
     rate.zones[name] = []
 
-    el = $(name)
+    rate.el = $(name)
 
-    rate.els[name].slide = $ el.find '.slide'
-    rate.els[name].slider = $ el.find  '.slider'
+    rate.els[name].slide = $ rate.el.find '.slide'
+    rate.els[name].slider = $ rate.el.find '.slider'
     rate.points[name].start = - ( rate.els[name].slide.width()/2 )
     rate.points[name].end = rate.els[name].slider.width() - (rate.els[name].slide.width()/2)
 
-    el.find('.zone').each( (i, el) ->
+    rate.el.find('.zone').each( (i, el) ->
       rate.zones[name].push
+        el: $(el)
         price: $(el).data 'price'
         rect: el.getBoundingClientRect()
 
       rate.prices[name] = $(el).data 'price' if i is 0
+      $(el).addClass 'full' if i is 0
     )
 
     #$('.rates').on 'drag', "#{name} > .slider > .slide", {name: name}, rate.dragevent
     rate.handle name
   handle: (name) ->
-
-   console.log "handling #{name}"
 
    rate.els[name].slide.unbind('drag', rate.dragevent)
    rate.els[name].slide.on 'drag', {name: name}, rate.dragevent
@@ -58,14 +57,13 @@ rate =
 
     for zone, i in rate.zones[name]
       if middle > zone.rect.left and zone.rect.right > middle
-        return zone.price
+        return {price: zone.price, el: zone.el}
   
   # update the price if we have a new one
-  newprice: (price, name) ->
-    return true if rate.prices[name] is price or price is undefined
-    rate.els[name].slide.find('.price').html '$' + price
-    rate.prices[name] = price
-    console.log price
-
-
+  newprice: (zone, name) ->
+    return true if rate.prices[name] is zone.price or zone.price is undefined
+    rate.els[name].slide.find('.price').html '$' + zone.price
+    rate.prices[name] = zone.price
+    $('.zone').removeClass 'full'
+    zone.el.addClass 'full'
 

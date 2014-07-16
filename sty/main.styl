@@ -117,16 +117,23 @@ body
               height 1.4em
               margin-left 0.42em
               margin-bottom 0.42em
+              transition background 0.2s linear
               animation dotIn 0.5s 0s ease-in-out both
               &.bluedot
-                background-color c_blue
+                background-color rgba(c_blue, 0.7)
               &.orangedot
-                background-color c_orange
+                background-color rgba(c_orange, 0.7)
               &.partialdot
-                background-color c_partial
+                background-color rgba(c_partial, 0.7)
             for r in 1..150
               .dot:nth-child({r})
                 animation-delay (r / 50)s
+            &.full > .dot.bluedot
+              background-color rgba(c_blue, 1)
+            &.full > .dot.orangedot
+              background-color rgba(c_orange, 1)
+            &.full > .dot.partialdot
+              background-color rgba(c_partial, 1)
 
         > .bottommeasure
           border-top 0.1em solid c_border
@@ -147,7 +154,7 @@ body
           top 0
           left 0
           border 0.1em solid c_dark
-          animation slideIn 0.5s ease-in-out both
+          transform scale(1)
           background-color c_light
           text-align center
           user-select none
@@ -156,12 +163,13 @@ body
           cursor -webkit-grab
           cursor -moz-grab
           transition transform 0.2s ease-in-out
-          &:active
+          animation slideIn 0.5s ease-in-out both
+          &:hover
             cursor grabbing
             cursor -webkit-grabbing
             cursor -moz-grabbing
-            transform scale(1.2, 1.2)
-            transition transform 0.2s ease-in-out
+            transform scale(1.2)
+            transition transform 0.1s ease-in-out
           > .inner
             position relative
             > .pointer
@@ -177,6 +185,7 @@ body
               font-size 1.5em
               color c_blue
               padding 0 0.5em
+              font-weight bold
             > .copy
               color c_blue
             > .nav
@@ -265,10 +274,10 @@ body
 
 @keyframes slideIn
   from
-    transform translate(20em, 0), scale(1)
+    transform translate(10em, 0)
     opacity 0
   to
     opacity 1
-    transform translate(0em, 0), scale(1)
+    transform translate(0em, 0)
 
 

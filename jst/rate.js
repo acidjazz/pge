@@ -2,33 +2,35 @@ var rate;
 
 rate = {
   zones: {},
+  el: {},
   els: {},
   points: {},
   prices: {},
   i: function(name) {
-    var el;
-    console.log(name);
     rate.els[name] = {};
     rate.points[name] = {};
     rate.zones[name] = [];
-    el = $(name);
-    rate.els[name].slide = $(el.find('.slide'));
-    rate.els[name].slider = $(el.find('.slider'));
+    rate.el = $(name);
+    rate.els[name].slide = $(rate.el.find('.slide'));
+    rate.els[name].slider = $(rate.el.find('.slider'));
     rate.points[name].start = -(rate.els[name].slide.width() / 2);
     rate.points[name].end = rate.els[name].slider.width() - (rate.els[name].slide.width() / 2);
-    el.find('.zone').each(function(i, el) {
+    rate.el.find('.zone').each(function(i, el) {
       rate.zones[name].push({
+        el: $(el),
         price: $(el).data('price'),
         rect: el.getBoundingClientRect()
       });
       if (i === 0) {
-        return rate.prices[name] = $(el).data('price');
+        rate.prices[name] = $(el).data('price');
+      }
+      if (i === 0) {
+        return $(el).addClass('full');
       }
     });
     return rate.handle(name);
   },
   handle: function(name) {
-    console.log("handling " + name);
     rate.els[name].slide.unbind('drag', rate.dragevent);
     return rate.els[name].slide.on('drag', {
       name: name
@@ -52,16 +54,20 @@ rate = {
     for (i = _i = 0, _len = _ref.length; _i < _len; i = ++_i) {
       zone = _ref[i];
       if (middle > zone.rect.left && zone.rect.right > middle) {
-        return zone.price;
+        return {
+          price: zone.price,
+          el: zone.el
+        };
       }
     }
   },
-  newprice: function(price, name) {
-    if (rate.prices[name] === price || price === void 0) {
+  newprice: function(zone, name) {
+    if (rate.prices[name] === zone.price || zone.price === void 0) {
       return true;
     }
-    rate.els[name].slide.find('.price').html('$' + price);
-    rate.prices[name] = price;
-    return console.log(price);
+    rate.els[name].slide.find('.price').html('$' + zone.price);
+    rate.prices[name] = zone.price;
+    $('.zone').removeClass('full');
+    return zone.el.addClass('full');
   }
 };

@@ -1,0 +1,45 @@
+.legend
+  .legendzone
+    .color.offpeak
+    .copy Off-peak
+  .legendzone
+    .color.partialpeak
+    .copy Partial-peak
+  .legendzone
+    .color.onpeak
+    .copy On-peak
+
+.title A Quick Look at Summar A1 Peak Day<br />Pricing Rates for Business Customers
+
+.graph
+  .leftmeasure Cost per kWh
+  //.flatrate Current Flat Rate ($0.234/kWh)
+  .inner
+    .zone.z1(data-price=0.202)
+      +dots('blue', 60)
+    .zone.z2(data-price=0.229)
+      +dots('partial', 60)
+    .zone.z3(data-price=0.238)
+      +dots('orange', 60)
+    .zone.z4(data-price=0.229)
+      +dots('partial', 60)
+    .zone.z5(data-price=0.202)
+      +dots('blue', 60)
+  .clear
+  .bottommeasure
+    .measure.m1: span.copy 12am
+    .measure.m2: span.copy 8:30am
+    .measure.m3: span.copy Noon
+    .measure.m4: span.copy 6pm
+    .measure.m5: span.copy 9:30pm
+
+.slider
+  .slide(draggable=true)
+    .inner
+      .pointer
+      .price $0.202
+      .copy per kWh
+      .nav slide
+  .clear
+  .bar
+

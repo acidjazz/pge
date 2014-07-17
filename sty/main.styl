@@ -22,13 +22,23 @@ body
   min-height 30em
   width 50em
   background-color c_light
+  margin 2em
+
   > .topcopy
     float left
     width 20em
     margin 0.5em
+    &.topcopy_top
+      width auto
   > .buttons
     float right
     margin 0.5em 0
+    &.buttons_center
+      float none
+      text-align center
+      > .button
+        display inline-block
+        float none
     > .button
       cursor pointer
       float left
@@ -42,6 +52,8 @@ body
       font-size 1.2em
       user-select none
       transition box-shadow 0.1s ease-in-out, margin 0.1s ease-in-out
+      &.button_long
+        width 12em
       &.active
         background linear-gradient(top, c_active_top 1%, c_active_bottom 99%)
         color white
@@ -110,29 +122,30 @@ body
             position absolute
             overflow hidden
             bottom 0
-
-            > .dot
-              float left
-              width 1.4em
-              height 1.4em
-              margin-left 0.42em
-              margin-bottom 0.42em
-              transition background 0.2s linear
-              animation dotIn 0.5s 0s ease-in-out both
-              &.bluedot
-                background-color rgba(c_blue, 0.7)
-              &.orangedot
-                background-color rgba(c_orange, 0.7)
-              &.partialdot
-                background-color rgba(c_partial, 0.7)
-            for r in 1..150
-              .dot:nth-child({r})
-                animation-delay (r / 50)s
-            &.full > .dot.bluedot
+            > .dots
+              width 25em
+              > .dot
+                float left
+                width 1.4em
+                height 1.4em
+                margin-left 0.42em
+                margin-bottom 0.42em
+                transition background 0.2s linear
+                animation dotIn 0.5s 0s ease-in-out both
+                &.bluedot
+                  background-color rgba(c_blue, 0.7)
+                &.orangedot
+                  background-color rgba(c_orange, 0.7)
+                &.partialdot
+                  background-color rgba(c_partial, 0.7)
+              for r in 1..150
+                .dot:nth-child({r})
+                  animation-delay (r / 50)s
+            &.full > .dots > .dot.bluedot
               background-color rgba(c_blue, 1)
-            &.full > .dot.orangedot
+            &.full > .dots > .dot.orangedot
               background-color rgba(c_orange, 1)
-            &.full > .dot.partialdot
+            &.full > .dots > .dot.partialdot
               background-color rgba(c_partial, 1)
 
         > .bottommeasure
@@ -153,24 +166,23 @@ body
           position absolute
           top 0
           left 0
-          border 0.1em solid c_dark
-          transform scale(1)
-          background-color c_light
           text-align center
           user-select none
-          box-shadow 0.1em 0.2em 0.3em rgba(black, 0.5)
           cursor grab
           cursor -webkit-grab
           cursor -moz-grab
           animation slideIn 0.5s ease-in-out both
-          &:hover
-            cursor grabbing
-            cursor -webkit-grabbing
-            cursor -moz-grabbing
-            transform scale(1.2)
-            transition transform 0.1s ease-in-out
           > .inner
+            border 0.1em solid c_dark
             position relative
+            background-color c_light
+            box-shadow 0.1em 0.2em 0.3em rgba(black, 0.5)
+            transition transform 0.1s ease-in-out
+            &:hover
+              cursor grabbing
+              cursor -webkit-grabbing
+              cursor -moz-grabbing
+              transform scale(1.2)
             > .pointer
               width 1em
               height 1em
@@ -216,52 +228,13 @@ body
           background-color c_border
           border-radius 1em
           margin-top 2em
-      
 
+  > .footer
+    padding 0 1em 1em 1em
+    font-size 0.8em
 
-.rate_ag4a_summer > .graph > .inner > .zone
-  &.z1
-    left 0
-    width 22em
-    height 5.4em
-  &.z2
-    left 22em
-    width 11em
-    height 10.8em
-  &.z3
-    left 33em
-    width 11em
-    height 5.4em
-
-.rate_ag4a_summer > .graph > .bottommeasure > .measure
-  &.m1
-    width 22em
-  &.m2
-    width 11em
-  &.m3
-    width 11em
-
-.rate_ag4a_winter > .graph > .inner > .zone
-  &.z1
-    left 0
-    width 14.6em
-    height 3.6em
-  &.z2
-    left 14.6em
-    width 24em
-    height 5.4em
-  &.z3
-    left 38.6em
-    width 5.4em
-    height 3.6em
-
-.rate_ag4a_winter > .graph > .bottommeasure > .measure
-  &.m1
-    width 14.6em
-  &.m2
-    width 24em
-  &.m3
-    width 5.4em
+@import _ag4a
+@import _a1
 
 @keyframes dotIn
   from

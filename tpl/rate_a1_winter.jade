@@ -1,3 +1,4 @@
+
 .legend
   .legendzone
     .color.offpeak
@@ -5,22 +6,25 @@
   .legendzone
     .color.partialpeak
     .copy Partial-peak
+  .legendzone
+    .color.onpeak
+    .copy On-peak
 
-.title A Quick Look at the Winter AG4A<br /> Time-of-Use Rate for Agricultural Customers
+.title A Quick Look at Winter A1 Peak Day<br />Pricing Rates for Business Customers
 
 .graph
   .leftmeasure Cost per kWh
-  .flatrate Current Flat Rate ($0.183/kWh)
+  //.flatrate Current Flat Rate ($0.234/kWh)
   .inner
-    .zone.z1(data-price=0.138)
-      +dots('blue', 40)
-    .zone.z2(data-price=0.169)
+    .zone.z1(data-price=0.149)
+      +dots('blue', 60)
+    .zone.z2(data-price=0.168)
       +dots('partial', 60)
-    .zone.z3(data-price=0.138)
-      +dots('blue', 20)
+    .zone.z3(data-price=0.149)
+      +dots('blue', 60)
   .clear
   .bottommeasure
-    .measure.m1: span.copy 12:00am
+    .measure.m1: span.copy 12am
     .measure.m2: span.copy 8:30am
     .measure.m3: span.copy 9:30pm
 
@@ -28,7 +32,7 @@
   .slide(draggable=true)
     .inner
       .pointer
-      .price $0.138
+      .price $0.202
       .copy per kWh
       .nav slide
   .clear

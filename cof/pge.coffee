@@ -13,7 +13,9 @@ pge =
 
     t = $ this
 
-    _.off $('.rate')
+    frame = t.parent().parent('.rateframe').attr('class').replace 'rateframe ', ''
+
+    _.off ".#{frame} > .rates > .rate"
     t.parent().find('.button').removeClass 'active'
     t.addClass 'active'
 

@@ -8,7 +8,7 @@ pge =
   handlers: ->
 
     $('.rateframe > .buttons > .button').click pge.switchrate
-    
+
   switchrate: ->
 
     t = $ this

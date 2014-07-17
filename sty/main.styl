@@ -162,7 +162,6 @@ body
           cursor grab
           cursor -webkit-grab
           cursor -moz-grab
-          transition transform 0.2s ease-in-out
           animation slideIn 0.5s ease-in-out both
           &:hover
             cursor grabbing
@@ -274,10 +273,8 @@ body
 
 @keyframes slideIn
   from
-    transform translate(10em, 0)
+    transform translate(10em,0)
     opacity 0
   to
     opacity 1
-    transform translate(0em, 0)
-
-
+    transform translate(0em,0)

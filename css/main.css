@@ -166,7 +166,7 @@ body {
 .rateframe > .rates > .rate > .graph > .leftmeasure {
   position: absolute;
   top: 8em;
-  left: -6em;
+  left: -5.6em;
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
   -o-transform: rotate(270deg);

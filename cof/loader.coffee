@@ -55,7 +55,7 @@ loader =
     return true
 
   redirect: ->
-    location.href = './compat.html'
+    #location.href = './compat.html'
     return false
 
   loadscripts: (list, complete) ->

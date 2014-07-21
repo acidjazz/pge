@@ -43,10 +43,10 @@ rate =
 
     name = ev.data.name
 
-    if dd.offsetX < rate.points[name].start || dd.offsetX > rate.points[name].end
+    if dd.offsetX - ($(this).width() / 2) < 0 || dd.offsetX - ($(this).width() / 2) > rate.points[name].end
       return true
 
-    $(this).css({left: dd.offsetX})
+    $(this).css({left: dd.offsetX - ($(this).width() / 2) })
 
     rate.newprice rate.linedup($(this)[0].getBoundingClientRect(), name), name
 

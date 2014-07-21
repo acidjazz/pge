@@ -6,9 +6,6 @@
   .legendzone
     .color.partialpeak
     .copy Partial-peak
-  .legendzone
-    .color.onpeak
-    .copy On-peak
 
 .title A Quick Look at Winter A1 Peak Day<br />Pricing Rates for Business Customers
 
@@ -19,11 +16,15 @@
     .zone.z1(data-price=0.149)
       +dots('blue', 60)
     .zone.z2(data-price=0.168)
-      +dots('partial', 60)
+      +dots('partial', 90)
     .zone.z3(data-price=0.149)
       +dots('blue', 60)
   .clear
   .bottommeasure
+    .measure.m1: span.spacer
+    .measure.m2: span.spacer
+    .measure.m3: span.spacer
+  .bottomtext
     .measure.m1: span.copy 12am
     .measure.m2: span.copy 8:30am
     .measure.m3: span.copy 9:30pm

@@ -8,8 +8,11 @@
   .legendzone
     .color.onpeak
     .copy On-peak
+  .legendzone
+    .color.eventpeak
+    .copy Event day 2-6pm
 
-.title A Quick Look at Summar Event<br />Day A1 Peak Day Pricing Rates<br />for Business Customers
+.title A Quick Look at Summer Event<br />Day A1 Peak Day Pricing Rates<br />for Business Customers
 
 .graph
   .leftmeasure Cost per kWh
@@ -25,13 +28,23 @@
       +dots('partial', 60)
     .zone.z5(data-price=0.202)
       +dots('blue', 60)
+    .zone.z6(data-price=0.838)
+      +dots('boldorange', 90)
   .clear
   .bottommeasure
+    .measure.m1: span.spacer
+    .measure.m2: span.spacer
+    .measure.m3: span.spacer
+    .measure.m4: span.spacer
+    .measure.m5: span.spacer
+    .measure.m6: span.spacer
+  .bottomtext
     .measure.m1: span.copy 12am
     .measure.m2: span.copy 8:30am
     .measure.m3: span.copy Noon
-    .measure.m4: span.copy 6pm
-    .measure.m5: span.copy 9:30pm
+    .measure.m4: span.copy 2pm
+    .measure.m5: span.copy 6pm
+    .measure.m6: span.copy 9:30pm
 
 .slider
   .slide(draggable=true)

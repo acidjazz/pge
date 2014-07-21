@@ -1,9 +1,19 @@
 /*
 stylus -w sty/main.styl -o css/.  
 */
+@font-face {
+  font-family: DINPro;
+  font-style: normal;
+  src: url("../fnt/DINPro.otf");
+}
+@font-face {
+  font-family: DINPro-Medium;
+  font-style: nomal;
+  src: url("../fnt/DINPro-Medium.otf");
+}
 body {
-  font: 62.5%/1.4em arial, helvetica, sans-serif;
-  color: #999;
+  font: 62.5%/1.4em DINPro, arial, helvetica, sans-serif;
+  color: #8d8d8d;
 }
 .clear {
   zoom: 1;
@@ -20,17 +30,18 @@ body {
   overflow: hidden;
   border: 0.1em solid #c8c8c8;
   min-height: 30em;
-  width: 50em;
+  width: 432px;
   background-color: #f7f7f8;
   margin: 2em;
 }
 .rateframe > .topcopy {
   float: left;
-  width: 20em;
+  width: 19em;
   margin: 0.5em;
 }
 .rateframe > .topcopy.topcopy_top {
-  width: auto;
+  width: 100%;
+  text-align: center;
 }
 .rateframe > .buttons {
   float: right;
@@ -47,14 +58,14 @@ body {
 .rateframe > .buttons > .button {
   cursor: pointer;
   float: left;
-  width: 8em;
   -webkit-box-shadow: 0.1em 0.2em 0.3em rgba(0,0,0,0.5);
   box-shadow: 0.1em 0.2em 0.3em rgba(0,0,0,0.5);
   -webkit-border-radius: 0.1em;
   border-radius: 0.1em;
-  margin: 0 0.5em;
+  margin: 0 0.3em;
   text-align: center;
-  padding: 0.5em;
+  padding: 0.3em 1.4em;
+  background-color: #fff;
   background: -webkit-linear-gradient(top, #f3f3f3 50%, #c6c6c6 100%);
   background: -moz-linear-gradient(top, #f3f3f3 50%, #c6c6c6 100%);
   background: -o-linear-gradient(top, #f3f3f3 50%, #c6c6c6 100%);
@@ -71,15 +82,13 @@ body {
   -ms-transition: box-shadow 0.1s ease-in-out, margin 0.1s ease-in-out;
   transition: box-shadow 0.1s ease-in-out, margin 0.1s ease-in-out;
 }
-.rateframe > .buttons > .button.button_long {
-  width: 12em;
-}
 .rateframe > .buttons > .button.active {
-  background: -webkit-linear-gradient(top, #bfdef3 1%, #5ea6e5 99%);
-  background: -moz-linear-gradient(top, #bfdef3 1%, #5ea6e5 99%);
-  background: -o-linear-gradient(top, #bfdef3 1%, #5ea6e5 99%);
-  background: -ms-linear-gradient(top, #bfdef3 1%, #5ea6e5 99%);
-  background: linear-gradient(to bottom, #bfdef3 1%, #5ea6e5 99%);
+  background-color: #078ec7;
+  background: -webkit-linear-gradient(top, #49c2ec 1%, #078ec7 99%);
+  background: -moz-linear-gradient(top, #49c2ec 1%, #078ec7 99%);
+  background: -o-linear-gradient(top, #49c2ec 1%, #078ec7 99%);
+  background: -ms-linear-gradient(top, #49c2ec 1%, #078ec7 99%);
+  background: linear-gradient(to bottom, #49c2ec 1%, #078ec7 99%);
   color: #fff;
   font-weight: bold;
 }
@@ -97,7 +106,7 @@ body {
   position: relative;
 }
 .rateframe > .rates > .rate {
-  margin: 2em 0;
+  margin: 1em 0;
 }
 .rateframe > .rates > .rate.off {
   display: none;
@@ -108,7 +117,8 @@ body {
 .rateframe > .rates > .rate > .legend {
   float: right;
   border: 0.1em solid #c8c8c8;
-  margin: 1em 2em 0 0;
+  margin: 1.4em 1em 0 0;
+  font-family: DINPro-Medium, arial, helvetica, sans-serif;
 }
 .rateframe > .rates > .rate > .legend > .legendzone {
   margin: 0.2em;
@@ -120,25 +130,31 @@ body {
   margin: 0.2em 0 0 0.2em;
 }
 .rateframe > .rates > .rate > .legend > .legendzone > .color.offpeak {
-  background-color: #29b1db;
+  background-color: #44c8f5;
 }
 .rateframe > .rates > .rate > .legend > .legendzone > .color.onpeak {
-  background-color: #faa22b;
+  background-color: #efbd61;
 }
 .rateframe > .rates > .rate > .legend > .legendzone > .color.partialpeak {
-  background-color: #c6b17b;
+  background-color: #ced1a8;
+}
+.rateframe > .rates > .rate > .legend > .legendzone > .color.eventpeak {
+  background-color: #ffab1c;
 }
 .rateframe > .rates > .rate > .legend > .legendzone > .copy {
-  margin: 0 2em 0 1.5em;
+  margin: 0 1em 0 1.5em;
 }
 .rateframe > .rates > .rate > .title {
-  color: #faa22b;
-  font-size: 1.3em;
-  margin: 1em 10em 1em 2em;
+  color: #efbd61;
+  font-size: 1.4em;
+  margin: 0.5em 10em 0.5em 1.7em;
+  padding-top: 1em;
+  font-family: DINPro-Medium, arial, helvetica, sans-serif;
+  line-height: 1.3em;
 }
 .rateframe > .rates > .rate > .graph {
   position: relative;
-  margin: 0 3em 0 1em;
+  margin: 0 1.3em 0 0.8em;
 }
 .rateframe > .rates > .rate > .graph > .flatrate {
   position: absolute;
@@ -172,12 +188,12 @@ body {
   bottom: 0;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone > .dots {
-  width: 25em;
+  width: 30em;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone > .dots > .dot {
   float: left;
-  width: 1.4em;
-  height: 1.4em;
+  width: 1.2em;
+  height: 1.2em;
   margin-left: 0.42em;
   margin-bottom: 0.42em;
   -webkit-transition: background 0.2s linear;
@@ -192,13 +208,16 @@ body {
   animation: dotIn 0.5s 0s ease-in-out both;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone > .dots > .dot.bluedot {
-  background-color: rgba(41,177,219,0.7);
+  background-color: rgba(68,200,245,0.8);
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone > .dots > .dot.orangedot {
-  background-color: rgba(250,162,43,0.7);
+  background-color: rgba(239,189,97,0.8);
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone > .dots > .dot.partialdot {
-  background-color: rgba(198,177,123,0.7);
+  background-color: rgba(206,209,168,0.8);
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots > .dot.boldorangedot {
+  background-color: rgba(255,171,28,0.9);
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(1) {
   -webkit-animation-delay: 0.02s;
@@ -1251,28 +1270,41 @@ body {
   animation-delay: 3s;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone.full > .dots > .dot.bluedot {
-  background-color: #29b1db;
+  background-color: #44c8f5;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone.full > .dots > .dot.orangedot {
-  background-color: #faa22b;
+  background-color: #efbd61;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone.full > .dots > .dot.partialdot {
-  background-color: #c6b17b;
+  background-color: #ced1a8;
 }
-.rateframe > .rates > .rate > .graph > .bottommeasure {
+.rateframe > .rates > .rate > .graph > .inner > .zone.full > .dots > .dot.boldorangedot {
+  background-color: #ffab1c;
+}
+.rateframe > .rates > .rate > .graph > .bottommeasure,
+.rateframe > .rates > .rate > .graph .bottomtext {
   border-top: 0.1em solid #c8c8c8;
   margin: 0 0 0 2em;
 }
-.rateframe > .rates > .rate > .graph > .bottommeasure > .measure {
+.rateframe > .rates > .rate > .graph > .bottommeasure > .measure,
+.rateframe > .rates > .rate > .graph .bottomtext > .measure {
   float: left;
 }
-.rateframe > .rates > .rate > .graph > .bottommeasure > .measure > .copy {
+.rateframe > .rates > .rate > .graph > .bottommeasure > .measure > .spacer,
+.rateframe > .rates > .rate > .graph .bottomtext > .measure > .spacer {
   padding: 0 0 0 1em;
   border-left: 0.1em solid #c8c8c8;
+  display: block;
+  height: 0.6em;
+}
+.rateframe > .rates > .rate > .graph > .bottommeasure > .measure > .copy,
+.rateframe > .rates > .rate > .graph .bottomtext > .measure > .copy {
+  padding: 0 0 0 0;
+  font-size: 1.1em;
 }
 .rateframe > .rates > .rate > .slider {
   height: 4em;
-  margin: 2em 3em 0 1em;
+  margin: 1em 3em 0 1em;
   position: relative;
 }
 .rateframe > .rates > .rate > .slider > .slide {
@@ -1331,15 +1363,17 @@ body {
 }
 .rateframe > .rates > .rate > .slider > .slide > .inner > .price {
   font-size: 1.5em;
-  color: #29b1db;
-  padding: 0 0.5em;
+  color: #44c8f5;
+  padding: 0 0.4em;
   font-weight: bold;
 }
 .rateframe > .rates > .rate > .slider > .slide > .inner > .copy {
-  color: #29b1db;
+  color: #5ac0e5;
+  font-size: 8px;
+  line-height: 12px;
 }
 .rateframe > .rates > .rate > .slider > .slide > .inner > .nav {
-  background-color: #808285;
+  background: url("../img/slider-arrows.png") #808285 no-repeat 9px 2px;
 }
 .rateframe > .rates > .rate > .slider > .slide > .inner {
   position: relative;
@@ -1359,19 +1393,23 @@ body {
 }
 .rateframe > .rates > .rate > .slider > .slide > .inner > .price {
   font-size: 1.5em;
-  color: #29b1db;
+  color: #0089c4;
   padding: 0 0.5em;
 }
 .rateframe > .rates > .rate > .slider > .slide > .inner > .copy {
-  color: #29b1db;
+  color: #5ac0e5;
 }
 .rateframe > .rates > .rate > .slider > .slide > .inner > .nav {
   background-color: #808285;
   color: #fff;
+  text-transform: uppercase;
+  height: 10px;
+  font-size: 8px;
+  line-height: 10px;
 }
 .rateframe > .rates > .rate > .slider > .bar {
   width: 100%;
-  height: 1em;
+  height: 0.7em;
   background-color: #c8c8c8;
   -webkit-border-radius: 1em;
   border-radius: 1em;
@@ -1380,6 +1418,7 @@ body {
 .rateframe > .footer {
   padding: 0 1em 1em 1em;
   font-size: 0.8em;
+  line-height: 1em;
 }
 .rate_ag4a_summer > .graph > .inner > .zone.z1 {
   left: 0;
@@ -1400,192 +1439,269 @@ body {
   height: 5.4em;
 }
 .rate_ag4a_summer > .graph > .bottommeasure > .measure.m1 {
-  width: 22em;
+  width: 22.1em;
 }
 .rate_ag4a_summer > .graph > .bottommeasure > .measure.m2 {
   width: 11em;
 }
 .rate_ag4a_summer > .graph > .bottommeasure > .measure.m3 {
+  width: 1em;
+}
+.rate_ag4a_summer > .graph > .bottomtext > .measure.m1 {
+  width: 21em;
+}
+.rate_ag4a_summer > .graph > .bottomtext > .measure.m2 {
+  width: 10.6em;
+}
+.rate_ag4a_summer > .graph > .bottomtext > .measure.m3 {
   width: 11em;
 }
 .rate_ag4a_winter > .graph > .inner > .zone.z1 {
   left: 0;
-  width: 16em;
+  width: 15.7em;
   height: 3.6em;
 }
 .rate_ag4a_winter > .graph > .inner > .zone.z2 {
-  left: 16.3em;
-  width: 24em;
+  left: 16.1em;
+  width: 23.6em;
   height: 5.4em;
 }
 .rate_ag4a_winter > .graph > .inner > .zone.z2 > .dots {
   margin-left: -1em;
 }
 .rate_ag4a_winter > .graph > .inner > .zone.z3 {
-  left: 40.6em;
-  width: 3em;
+  left: 40.2em;
+  width: 3.8em;
   height: 3.6em;
 }
 .rate_ag4a_winter > .graph > .inner > .zone.z3 > .dots {
-  margin-left: -1em;
+  margin-left: -1.2em;
 }
 .rate_ag4a_winter > .graph > .bottommeasure > .measure.m1 {
-  width: 14.6em;
+  width: 15.8em;
 }
 .rate_ag4a_winter > .graph > .bottommeasure > .measure.m2 {
-  width: 24em;
+  width: 24.1em;
 }
 .rate_ag4a_winter > .graph > .bottommeasure > .measure.m3 {
+  width: 1em;
+}
+.rate_ag4a_winter > .graph > .bottomtext > .measure.m1 {
+  width: 14.4em;
+}
+.rate_ag4a_winter > .graph > .bottomtext > .measure.m2 {
+  width: 24em;
+}
+.rate_ag4a_winter > .graph > .bottomtext > .measure.m3 {
   width: 5.4em;
 }
 .rate_a1_summer > .graph > .inner > .zone.z1 {
   left: 0;
-  width: 15.7em;
-  height: 7.2em;
+  width: 13.7em;
+  height: 6.4em;
 }
 .rate_a1_summer > .graph > .inner > .zone.z1 > .dots {
   width: 18em !important;
 }
 .rate_a1_summer > .graph > .inner > .zone.z2 {
-  left: 16em;
-  width: 6.5em;
-  height: 10.8em;
+  left: 13.9em;
+  width: 5.62em;
+  height: 9.6em;
 }
 .rate_a1_summer > .graph > .inner > .zone.z2 > .dots {
-  margin-left: -1em;
+  margin-left: -0.8em;
   width: 8em !important;
 }
 .rate_a1_summer > .graph > .inner > .zone.z3 {
-  left: 22.5em;
-  width: 11em;
-  height: 12.4em;
+  left: 19.5em;
+  width: 9.7em;
+  height: 11.2em;
 }
 .rate_a1_summer > .graph > .inner > .zone.z3 > .dots {
   width: 13em !important;
 }
 .rate_a1_summer > .graph > .inner > .zone.z4 {
-  left: 33.5em;
-  width: 6.3em;
-  height: 10.8em;
+  left: 29.2em;
+  width: 5.6em;
+  height: 9.6em;
 }
 .rate_a1_summer > .graph > .inner > .zone.z4 > .dots {
   width: 8em !important;
 }
 .rate_a1_summer > .graph > .inner > .zone.z5 {
-  left: 40em;
-  width: 4em;
-  height: 5.4em;
+  left: 35.1em;
+  width: 3.9em;
+  height: 6.4em;
 }
 .rate_a1_summer > .graph > .inner > .zone.z5 > .dots {
   margin-left: -1.1em;
   width: 6em !important;
 }
+.rateframe > .rates > .rate.rate_a1_summer > .legend {
+  margin-top: 0.7em;
+}
 .rate_a1_summer > .graph > .bottommeasure > .measure.m1 {
-  width: 15.7em;
+  width: 13.8em;
 }
 .rate_a1_summer > .graph > .bottommeasure > .measure.m2 {
-  width: 6.5em;
+  width: 5.9em;
 }
 .rate_a1_summer > .graph > .bottommeasure > .measure.m3 {
-  width: 11em;
+  width: 9.7em;
 }
 .rate_a1_summer > .graph > .bottommeasure > .measure.m4 {
-  width: 6.3em;
+  width: 5.4em;
 }
 .rate_a1_summer > .graph > .bottommeasure > .measure.m5 {
+  width: 1em;
+}
+.rate_a1_summer > .graph > .bottomtext > .measure.m1 {
+  width: 12.1em;
+}
+.rate_a1_summer > .graph > .bottomtext > .measure.m2 {
+  width: 6.4em;
+}
+.rate_a1_summer > .graph > .bottomtext > .measure.m3 {
+  width: 9.8em;
+}
+.rate_a1_summer > .graph > .bottomtext > .measure.m4 {
+  width: 5em;
+}
+.rate_a1_summer > .graph > .bottomtext > .measure.m5 {
   width: 4em;
 }
 .rate_a1_winter > .graph > .inner > .zone.z1 {
   left: 0;
-  width: 15.7em;
-  height: 5.4em;
+  width: 13.9em;
+  height: 4.8em;
 }
 .rate_a1_winter > .graph > .inner > .zone.z1 > .dots {
   width: 18em !important;
 }
 .rate_a1_winter > .graph > .inner > .zone.z2 {
-  left: 16em;
-  width: 24em;
-  height: 7.2em;
+  left: 14.1em;
+  width: 20.8em;
+  height: 8em;
 }
 .rate_a1_winter > .graph > .inner > .zone.z2 > .dots {
   margin-left: -1em;
   width: 28em !important;
 }
 .rate_a1_winter > .graph > .inner > .zone.z3 {
-  left: 40.3em;
-  width: 3.7em;
-  height: 5.4em;
+  left: 35.1em;
+  width: 3.9em;
+  height: 4.8em;
 }
 .rate_a1_winter > .graph > .inner > .zone.z3 > .dots {
   width: 7em !important;
   margin-left: -1em;
 }
 .rate_a1_winter > .graph > .bottommeasure > .measure.m1 {
-  width: 15.7em;
+  width: 13.9em;
 }
 .rate_a1_winter > .graph > .bottommeasure > .measure.m2 {
-  width: 6.5em;
+  width: 21em;
 }
 .rate_a1_winter > .graph > .bottommeasure > .measure.m3 {
-  width: 11em;
+  width: 1em;
+}
+.rate_a1_winter > .graph > .bottomtext > .measure.m1 {
+  width: 12.5em;
+}
+.rate_a1_winter > .graph > .bottomtext > .measure.m2 {
+  width: 21em;
+}
+.rate_a1_winter > .graph > .bottomtext > .measure.m3 {
+  width: 1em;
 }
 .rate_a1_summer_day > .graph > .inner > .zone.z1 {
   left: 0;
-  width: 15.7em;
-  height: 7.2em;
+  width: 13.7em;
+  height: 6.4em;
 }
 .rate_a1_summer_day > .graph > .inner > .zone.z1 > .dots {
   width: 18em !important;
 }
 .rate_a1_summer_day > .graph > .inner > .zone.z2 {
-  left: 16em;
-  width: 6.5em;
-  height: 10.8em;
+  left: 13.9em;
+  width: 5.62em;
+  height: 9.6em;
 }
 .rate_a1_summer_day > .graph > .inner > .zone.z2 > .dots {
-  margin-left: -1em;
+  margin-left: -0.8em;
   width: 8em !important;
 }
 .rate_a1_summer_day > .graph > .inner > .zone.z3 {
-  left: 22.5em;
-  width: 11em;
-  height: 12.4em;
+  left: 19.5em;
+  width: 3.4em;
+  height: 11.2em;
 }
 .rate_a1_summer_day > .graph > .inner > .zone.z3 > .dots {
   width: 13em !important;
 }
+.rate_a1_summer_day > .graph > .inner > .zone.z6 {
+  left: 22.7em;
+  width: 6.8em;
+  height: 17.6em;
+}
+.rate_a1_summer_day > .graph > .inner > .zone.z6 > .dots {
+  width: 13em !important;
+}
 .rate_a1_summer_day > .graph > .inner > .zone.z4 {
-  left: 33.5em;
-  width: 6.3em;
-  height: 10.8em;
+  left: 29.2em;
+  width: 5.6em;
+  height: 9.6em;
 }
 .rate_a1_summer_day > .graph > .inner > .zone.z4 > .dots {
   width: 8em !important;
 }
 .rate_a1_summer_day > .graph > .inner > .zone.z5 {
-  left: 40em;
-  width: 4em;
-  height: 5.4em;
+  left: 35.1em;
+  width: 3.9em;
+  height: 6.4em;
 }
 .rate_a1_summer_day > .graph > .inner > .zone.z5 > .dots {
   margin-left: -1.1em;
   width: 6em !important;
 }
 .rate_a1_summer_day > .graph > .bottommeasure > .measure.m1 {
-  width: 15.7em;
+  width: 13.8em;
 }
 .rate_a1_summer_day > .graph > .bottommeasure > .measure.m2 {
-  width: 6.5em;
+  width: 5.9em;
 }
 .rate_a1_summer_day > .graph > .bottommeasure > .measure.m3 {
-  width: 11em;
+  width: 3.2em;
 }
 .rate_a1_summer_day > .graph > .bottommeasure > .measure.m4 {
-  width: 6.3em;
+  width: 6.4em;
 }
 .rate_a1_summer_day > .graph > .bottommeasure > .measure.m5 {
+  width: 5.5em;
+}
+.rate_a1_summer_day > .graph > .bottommeasure > .measure.m6 {
+  width: 1em;
+}
+.rate_a1_summer_day > .graph > .bottomtext > .measure.m1 {
+  width: 12.1em;
+}
+.rate_a1_summer_day > .graph > .bottomtext > .measure.m2 {
+  width: 6.4em;
+}
+.rate_a1_summer_day > .graph > .bottomtext > .measure.m3 {
+  width: 3.4em;
+}
+.rate_a1_summer_day > .graph > .bottomtext > .measure.m4 {
+  width: 6.3em;
+}
+.rate_a1_summer_day > .graph > .bottomtext > .measure.m5 {
+  width: 5em;
+}
+.rate_a1_summer_day > .graph > .bottomtext > .measure.m6 {
   width: 4em;
+}
+.rateframe > .rates > .rate.rate_a1_summer_day > .legend > .legendzone > .copy {
+  margin-right: 0.2em;
 }
 @-moz-keyframes dotIn {
   from {

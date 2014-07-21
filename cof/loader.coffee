@@ -47,8 +47,8 @@ loader =
 
   compatible: ->
     return loader.redirect() if loader.browser == 'Chrome' and loader.version < 17
-    return loader.redirect() if loader.browser == 'MSIE' and loader.version < 10
-    return loader.redirect() if loader.browser == 'Explorer' and loader.version < 10
+    return loader.redirect() if loader.browser == 'MSIE' and loader.version < 9
+    return loader.redirect() if loader.browser == 'Explorer' and loader.version < 9
     return loader.redirect() if loader.browser == 'FireFox' and loader.version < 20
     return loader.redirect() if loader.browser == 'Safari' and loader.version < 6
     return loader.redirect() if !loader.browser.indexOf ['Chrome','MSIE','FireFox','Safari']

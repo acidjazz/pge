@@ -9,8 +9,18 @@ vendor-prefixes ?= webkit moz o ms official
 @import clearfix
 @import _vars
 
+@font-face
+   font-family DINPro
+   font-style normal
+   src url(../fnt/DINPro.otf)
+
+@font-face
+   font-family DINPro-Medium
+   font-style nomal
+   src url(../fnt/DINPro-Medium.otf)
+
 body
-  font 62.5%/1.4em arial,helvetica,sans-serif
+  font 62.5%/1.4em DINPro,arial,helvetica,sans-serif
   color c_text
 
 .clear
@@ -20,16 +30,17 @@ body
   overflow hidden
   border 0.1em solid c_border
   min-height 30em
-  width 50em
+  width 432px
   background-color c_light
   margin 2em
 
   > .topcopy
     float left
-    width 20em
+    width 19em
     margin 0.5em
     &.topcopy_top
-      width auto
+      width 100%
+      text-align center
   > .buttons
     float right
     margin 0.5em 0
@@ -42,19 +53,18 @@ body
     > .button
       cursor pointer
       float left
-      width 8em
       box-shadow 0.1em 0.2em 0.3em rgba(black, 0.5)
       border-radius 0.1em
-      margin 0 0.5em
+      margin 0 0.3em
       text-align center
-      padding 0.5em
+      padding 0.3em 1.4em
+      background-color white
       background linear-gradient(top, c_button_top 50%, c_button_bottom 100%)
       font-size 1.2em
       user-select none
       transition box-shadow 0.1s ease-in-out, margin 0.1s ease-in-out
-      &.button_long
-        width 12em
       &.active
+        background-color c_active_bottom
         background linear-gradient(top, c_active_top 1%, c_active_bottom 99%)
         color white
         font-weight bold
@@ -65,7 +75,7 @@ body
   > .rates
     position relative
     > .rate
-      margin 2em 0
+      margin 1em 0
       &.off
         display none
       &.on
@@ -73,7 +83,8 @@ body
       > .legend
         float right
         border 0.1em solid c_border
-        margin 1em 2em 0 0
+        margin 1.4em 1em 0 0
+        font-family DINPro-Medium,arial,helvetica,sans-serif
         > .legendzone
           margin 0.2em
           > .color
@@ -87,16 +98,21 @@ body
               background-color c_orange
             &.partialpeak
               background-color c_partial
+            &.eventpeak
+              background-color c_bold_orange
           > .copy
-            margin 0 2em 0 1.5em
+            margin 0 1em 0 1.5em
       > .title
         color c_orange
-        font-size 1.3em
-        margin 1em 10em 1em 2em
+        font-size 1.4em
+        margin .5em 10em .5em 1.7em
+        padding-top 1em
+        font-family DINPro-Medium,arial,helvetica,sans-serif 
+        line-height 1.3em
 
       > .graph
         position relative
-        margin 0 3em 0 1em 
+        margin 0 1.3em 0 .8em 
         > .flatrate
           position absolute
           top 6.15em
@@ -123,21 +139,23 @@ body
             overflow hidden
             bottom 0
             > .dots
-              width 25em
+              width 30em
               > .dot
                 float left
-                width 1.4em
-                height 1.4em
+                width 1.2em
+                height 1.2em
                 margin-left 0.42em
                 margin-bottom 0.42em
                 transition background 0.2s linear
                 animation dotIn 0.5s 0s ease-in-out both
                 &.bluedot
-                  background-color rgba(c_blue, 0.7)
+                  background-color rgba(c_blue, 0.8)
                 &.orangedot
-                  background-color rgba(c_orange, 0.7)
+                  background-color rgba(c_orange, 0.8)
                 &.partialdot
-                  background-color rgba(c_partial, 0.7)
+                  background-color rgba(c_partial, 0.8)
+                &.boldorangedot
+                  background-color rgba(c_bold_orange, 0.9)
               for r in 1..150
                 .dot:nth-child({r})
                   animation-delay (r / 50)s
@@ -147,19 +165,26 @@ body
               background-color rgba(c_orange, 1)
             &.full > .dots > .dot.partialdot
               background-color rgba(c_partial, 1)
+            &.full > .dots > .dot.boldorangedot
+              background-color rgba(c_bold_orange, 1)
 
-        > .bottommeasure
+        > .bottommeasure, .bottomtext
           border-top 0.1em solid c_border
           margin 0 0 0 2em
 
           > .measure
             float left
-            > .copy
+            > .spacer
               padding 0 0 0 1em
               border-left 0.1em solid c_border
+              display block
+              height .6em
+            > .copy
+              padding 0 0 0 0
+              font-size 1.1em
       > .slider
         height 4em
-        margin 2em 3em 0 1em 
+        margin 1em 3em 0 1em 
         position relative
 
         > .slide
@@ -195,12 +220,14 @@ body
             > .price
               font-size 1.5em
               color c_blue
-              padding 0 0.5em
+              padding 0 0.4em
               font-weight bold
             > .copy
-              color c_blue
+              color c_kwtextblue
+              font-size 8px
+              line-height 12px 
             > .nav
-              background-color c_dark
+              background url(../img/slider-arrows.png) c_dark no-repeat 9px 2px
           > .inner
             position relative
             > .pointer
@@ -214,24 +241,28 @@ body
 
             > .price
               font-size 1.5em
-              color c_blue
+              color c_darkblue
               padding 0 0.5em
             > .copy
-              color c_blue
+              color c_kwtextblue
             > .nav
               background-color c_dark
               color white
-
+              text-transform uppercase
+              height 10px
+              font-size 8px
+              line-height 10px
         > .bar
           width 100%
-          height 1em
+          height .7em
           background-color c_border
           border-radius 1em
           margin-top 2em
 
   > .footer
     padding 0 1em 1em 1em
-    font-size 0.8em
+    font-size .8em
+    line-height 1em
 
 @import _ag4a
 @import _a1

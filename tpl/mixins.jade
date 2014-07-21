@@ -1,6 +1,12 @@
 mixin dots(type, amt)
   .dots
     - for (var i = 0; i != amt; i++)
-      .dot(class=type + 'dot')
+      if type != "boldorange" 
+        .dot(class=type + 'dot')
+      else
+        if i < 28
+          .dot(class=type + 'dot')
+        else 
+          .dot(class='orangedot')
     .clear
   .clear

@@ -1309,7 +1309,7 @@ body {
 }
 .rateframe > .rates > .rate > .slider > .slide {
   position: absolute;
-  top: 1em;
+  top: 0.5em;
   left: 0;
   text-align: center;
   -webkit-user-select: none;

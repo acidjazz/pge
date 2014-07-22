@@ -159,7 +159,7 @@ body
                   background-color rgba(c_bold_orange, 0.9)
               for r in 1..150
                 .dot:nth-child({r})
-                  animation-delay (r / 50)s
+                  animation-delay (r / 75)s
             &.full > .dots > .dot.bluedot
               background-color rgba(c_blue, 1)
             &.full > .dots > .dot.orangedot
@@ -185,7 +185,7 @@ body
               font-size 1.1em
       > .slider
         height 4em
-        margin 1em 3em 0 1em 
+        margin 1em 1.5em 0 0.75em 
         position relative
 
         > .slide
@@ -254,11 +254,10 @@ body
               font-size 8px
               line-height 10px
         > .bar
-          width 100%
-          height .7em
+          height 0.7em
           background-color c_border
           border-radius 1em
-          margin 2em 0 0 1em
+          margin 2em 0 0 2em
 
   > .footer
     padding 0 1em 1em 1em

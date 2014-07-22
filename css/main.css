@@ -133,7 +133,7 @@ body {
   background-color: #44c8f5;
 }
 .rateframe > .rates > .rate > .legend > .legendzone > .color.onpeak {
-  background-color: #efbd61;
+  background-color: #e9b91a;
 }
 .rateframe > .rates > .rate > .legend > .legendzone > .color.partialpeak {
   background-color: #ced1a8;
@@ -145,7 +145,7 @@ body {
   margin: 0 1em 0 1.5em;
 }
 .rateframe > .rates > .rate > .title {
-  color: #efbd61;
+  color: #e9b91a;
   font-size: 1.4em;
   margin: 0.5em 10em 0.5em 1.7em;
   padding-top: 1em;
@@ -211,7 +211,7 @@ body {
   background-color: rgba(68,200,245,0.8);
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone > .dots > .dot.orangedot {
-  background-color: rgba(239,189,97,0.8);
+  background-color: rgba(233,185,26,0.8);
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone > .dots > .dot.partialdot {
   background-color: rgba(206,209,168,0.8);
@@ -220,1060 +220,1060 @@ body {
   background-color: rgba(255,171,28,0.9);
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(1) {
-  -webkit-animation-delay: 0.02s;
-  -moz-animation-delay: 0.02s;
-  -o-animation-delay: 0.02s;
-  -ms-animation-delay: 0.02s;
-  animation-delay: 0.02s;
+  -webkit-animation-delay: 0.013333333333333s;
+  -moz-animation-delay: 0.013333333333333s;
+  -o-animation-delay: 0.013333333333333s;
+  -ms-animation-delay: 0.013333333333333s;
+  animation-delay: 0.013333333333333s;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(2) {
+  -webkit-animation-delay: 0.026666666666667s;
+  -moz-animation-delay: 0.026666666666667s;
+  -o-animation-delay: 0.026666666666667s;
+  -ms-animation-delay: 0.026666666666667s;
+  animation-delay: 0.026666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(3) {
   -webkit-animation-delay: 0.04s;
   -moz-animation-delay: 0.04s;
   -o-animation-delay: 0.04s;
   -ms-animation-delay: 0.04s;
   animation-delay: 0.04s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(3) {
-  -webkit-animation-delay: 0.06s;
-  -moz-animation-delay: 0.06s;
-  -o-animation-delay: 0.06s;
-  -ms-animation-delay: 0.06s;
-  animation-delay: 0.06s;
-}
 .rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(4) {
+  -webkit-animation-delay: 0.053333333333333s;
+  -moz-animation-delay: 0.053333333333333s;
+  -o-animation-delay: 0.053333333333333s;
+  -ms-animation-delay: 0.053333333333333s;
+  animation-delay: 0.053333333333333s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(5) {
+  -webkit-animation-delay: 0.066666666666667s;
+  -moz-animation-delay: 0.066666666666667s;
+  -o-animation-delay: 0.066666666666667s;
+  -ms-animation-delay: 0.066666666666667s;
+  animation-delay: 0.066666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(6) {
   -webkit-animation-delay: 0.08s;
   -moz-animation-delay: 0.08s;
   -o-animation-delay: 0.08s;
   -ms-animation-delay: 0.08s;
   animation-delay: 0.08s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(5) {
-  -webkit-animation-delay: 0.1s;
-  -moz-animation-delay: 0.1s;
-  -o-animation-delay: 0.1s;
-  -ms-animation-delay: 0.1s;
-  animation-delay: 0.1s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(7) {
+  -webkit-animation-delay: 0.093333333333333s;
+  -moz-animation-delay: 0.093333333333333s;
+  -o-animation-delay: 0.093333333333333s;
+  -ms-animation-delay: 0.093333333333333s;
+  animation-delay: 0.093333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(6) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(8) {
+  -webkit-animation-delay: 0.106666666666667s;
+  -moz-animation-delay: 0.106666666666667s;
+  -o-animation-delay: 0.106666666666667s;
+  -ms-animation-delay: 0.106666666666667s;
+  animation-delay: 0.106666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(9) {
   -webkit-animation-delay: 0.12s;
   -moz-animation-delay: 0.12s;
   -o-animation-delay: 0.12s;
   -ms-animation-delay: 0.12s;
   animation-delay: 0.12s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(7) {
-  -webkit-animation-delay: 0.14s;
-  -moz-animation-delay: 0.14s;
-  -o-animation-delay: 0.14s;
-  -ms-animation-delay: 0.14s;
-  animation-delay: 0.14s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(10) {
+  -webkit-animation-delay: 0.133333333333333s;
+  -moz-animation-delay: 0.133333333333333s;
+  -o-animation-delay: 0.133333333333333s;
+  -ms-animation-delay: 0.133333333333333s;
+  animation-delay: 0.133333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(8) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(11) {
+  -webkit-animation-delay: 0.146666666666667s;
+  -moz-animation-delay: 0.146666666666667s;
+  -o-animation-delay: 0.146666666666667s;
+  -ms-animation-delay: 0.146666666666667s;
+  animation-delay: 0.146666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(12) {
   -webkit-animation-delay: 0.16s;
   -moz-animation-delay: 0.16s;
   -o-animation-delay: 0.16s;
   -ms-animation-delay: 0.16s;
   animation-delay: 0.16s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(9) {
-  -webkit-animation-delay: 0.18s;
-  -moz-animation-delay: 0.18s;
-  -o-animation-delay: 0.18s;
-  -ms-animation-delay: 0.18s;
-  animation-delay: 0.18s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(13) {
+  -webkit-animation-delay: 0.173333333333333s;
+  -moz-animation-delay: 0.173333333333333s;
+  -o-animation-delay: 0.173333333333333s;
+  -ms-animation-delay: 0.173333333333333s;
+  animation-delay: 0.173333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(10) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(14) {
+  -webkit-animation-delay: 0.186666666666667s;
+  -moz-animation-delay: 0.186666666666667s;
+  -o-animation-delay: 0.186666666666667s;
+  -ms-animation-delay: 0.186666666666667s;
+  animation-delay: 0.186666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(15) {
   -webkit-animation-delay: 0.2s;
   -moz-animation-delay: 0.2s;
   -o-animation-delay: 0.2s;
   -ms-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(11) {
-  -webkit-animation-delay: 0.22s;
-  -moz-animation-delay: 0.22s;
-  -o-animation-delay: 0.22s;
-  -ms-animation-delay: 0.22s;
-  animation-delay: 0.22s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(16) {
+  -webkit-animation-delay: 0.213333333333333s;
+  -moz-animation-delay: 0.213333333333333s;
+  -o-animation-delay: 0.213333333333333s;
+  -ms-animation-delay: 0.213333333333333s;
+  animation-delay: 0.213333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(12) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(17) {
+  -webkit-animation-delay: 0.226666666666667s;
+  -moz-animation-delay: 0.226666666666667s;
+  -o-animation-delay: 0.226666666666667s;
+  -ms-animation-delay: 0.226666666666667s;
+  animation-delay: 0.226666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(18) {
   -webkit-animation-delay: 0.24s;
   -moz-animation-delay: 0.24s;
   -o-animation-delay: 0.24s;
   -ms-animation-delay: 0.24s;
   animation-delay: 0.24s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(13) {
-  -webkit-animation-delay: 0.26s;
-  -moz-animation-delay: 0.26s;
-  -o-animation-delay: 0.26s;
-  -ms-animation-delay: 0.26s;
-  animation-delay: 0.26s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(19) {
+  -webkit-animation-delay: 0.253333333333333s;
+  -moz-animation-delay: 0.253333333333333s;
+  -o-animation-delay: 0.253333333333333s;
+  -ms-animation-delay: 0.253333333333333s;
+  animation-delay: 0.253333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(14) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(20) {
+  -webkit-animation-delay: 0.266666666666667s;
+  -moz-animation-delay: 0.266666666666667s;
+  -o-animation-delay: 0.266666666666667s;
+  -ms-animation-delay: 0.266666666666667s;
+  animation-delay: 0.266666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(21) {
   -webkit-animation-delay: 0.28s;
   -moz-animation-delay: 0.28s;
   -o-animation-delay: 0.28s;
   -ms-animation-delay: 0.28s;
   animation-delay: 0.28s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(15) {
-  -webkit-animation-delay: 0.3s;
-  -moz-animation-delay: 0.3s;
-  -o-animation-delay: 0.3s;
-  -ms-animation-delay: 0.3s;
-  animation-delay: 0.3s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(22) {
+  -webkit-animation-delay: 0.293333333333333s;
+  -moz-animation-delay: 0.293333333333333s;
+  -o-animation-delay: 0.293333333333333s;
+  -ms-animation-delay: 0.293333333333333s;
+  animation-delay: 0.293333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(16) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(23) {
+  -webkit-animation-delay: 0.306666666666667s;
+  -moz-animation-delay: 0.306666666666667s;
+  -o-animation-delay: 0.306666666666667s;
+  -ms-animation-delay: 0.306666666666667s;
+  animation-delay: 0.306666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(24) {
   -webkit-animation-delay: 0.32s;
   -moz-animation-delay: 0.32s;
   -o-animation-delay: 0.32s;
   -ms-animation-delay: 0.32s;
   animation-delay: 0.32s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(17) {
-  -webkit-animation-delay: 0.34s;
-  -moz-animation-delay: 0.34s;
-  -o-animation-delay: 0.34s;
-  -ms-animation-delay: 0.34s;
-  animation-delay: 0.34s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(25) {
+  -webkit-animation-delay: 0.333333333333333s;
+  -moz-animation-delay: 0.333333333333333s;
+  -o-animation-delay: 0.333333333333333s;
+  -ms-animation-delay: 0.333333333333333s;
+  animation-delay: 0.333333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(18) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(26) {
+  -webkit-animation-delay: 0.346666666666667s;
+  -moz-animation-delay: 0.346666666666667s;
+  -o-animation-delay: 0.346666666666667s;
+  -ms-animation-delay: 0.346666666666667s;
+  animation-delay: 0.346666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(27) {
   -webkit-animation-delay: 0.36s;
   -moz-animation-delay: 0.36s;
   -o-animation-delay: 0.36s;
   -ms-animation-delay: 0.36s;
   animation-delay: 0.36s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(19) {
-  -webkit-animation-delay: 0.38s;
-  -moz-animation-delay: 0.38s;
-  -o-animation-delay: 0.38s;
-  -ms-animation-delay: 0.38s;
-  animation-delay: 0.38s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(28) {
+  -webkit-animation-delay: 0.373333333333333s;
+  -moz-animation-delay: 0.373333333333333s;
+  -o-animation-delay: 0.373333333333333s;
+  -ms-animation-delay: 0.373333333333333s;
+  animation-delay: 0.373333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(20) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(29) {
+  -webkit-animation-delay: 0.386666666666667s;
+  -moz-animation-delay: 0.386666666666667s;
+  -o-animation-delay: 0.386666666666667s;
+  -ms-animation-delay: 0.386666666666667s;
+  animation-delay: 0.386666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(30) {
   -webkit-animation-delay: 0.4s;
   -moz-animation-delay: 0.4s;
   -o-animation-delay: 0.4s;
   -ms-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(21) {
-  -webkit-animation-delay: 0.42s;
-  -moz-animation-delay: 0.42s;
-  -o-animation-delay: 0.42s;
-  -ms-animation-delay: 0.42s;
-  animation-delay: 0.42s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(31) {
+  -webkit-animation-delay: 0.413333333333333s;
+  -moz-animation-delay: 0.413333333333333s;
+  -o-animation-delay: 0.413333333333333s;
+  -ms-animation-delay: 0.413333333333333s;
+  animation-delay: 0.413333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(22) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(32) {
+  -webkit-animation-delay: 0.426666666666667s;
+  -moz-animation-delay: 0.426666666666667s;
+  -o-animation-delay: 0.426666666666667s;
+  -ms-animation-delay: 0.426666666666667s;
+  animation-delay: 0.426666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(33) {
   -webkit-animation-delay: 0.44s;
   -moz-animation-delay: 0.44s;
   -o-animation-delay: 0.44s;
   -ms-animation-delay: 0.44s;
   animation-delay: 0.44s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(23) {
-  -webkit-animation-delay: 0.46s;
-  -moz-animation-delay: 0.46s;
-  -o-animation-delay: 0.46s;
-  -ms-animation-delay: 0.46s;
-  animation-delay: 0.46s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(34) {
+  -webkit-animation-delay: 0.453333333333333s;
+  -moz-animation-delay: 0.453333333333333s;
+  -o-animation-delay: 0.453333333333333s;
+  -ms-animation-delay: 0.453333333333333s;
+  animation-delay: 0.453333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(24) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(35) {
+  -webkit-animation-delay: 0.466666666666667s;
+  -moz-animation-delay: 0.466666666666667s;
+  -o-animation-delay: 0.466666666666667s;
+  -ms-animation-delay: 0.466666666666667s;
+  animation-delay: 0.466666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(36) {
   -webkit-animation-delay: 0.48s;
   -moz-animation-delay: 0.48s;
   -o-animation-delay: 0.48s;
   -ms-animation-delay: 0.48s;
   animation-delay: 0.48s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(25) {
-  -webkit-animation-delay: 0.5s;
-  -moz-animation-delay: 0.5s;
-  -o-animation-delay: 0.5s;
-  -ms-animation-delay: 0.5s;
-  animation-delay: 0.5s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(37) {
+  -webkit-animation-delay: 0.493333333333333s;
+  -moz-animation-delay: 0.493333333333333s;
+  -o-animation-delay: 0.493333333333333s;
+  -ms-animation-delay: 0.493333333333333s;
+  animation-delay: 0.493333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(26) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(38) {
+  -webkit-animation-delay: 0.506666666666667s;
+  -moz-animation-delay: 0.506666666666667s;
+  -o-animation-delay: 0.506666666666667s;
+  -ms-animation-delay: 0.506666666666667s;
+  animation-delay: 0.506666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(39) {
   -webkit-animation-delay: 0.52s;
   -moz-animation-delay: 0.52s;
   -o-animation-delay: 0.52s;
   -ms-animation-delay: 0.52s;
   animation-delay: 0.52s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(27) {
-  -webkit-animation-delay: 0.54s;
-  -moz-animation-delay: 0.54s;
-  -o-animation-delay: 0.54s;
-  -ms-animation-delay: 0.54s;
-  animation-delay: 0.54s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(40) {
+  -webkit-animation-delay: 0.533333333333333s;
+  -moz-animation-delay: 0.533333333333333s;
+  -o-animation-delay: 0.533333333333333s;
+  -ms-animation-delay: 0.533333333333333s;
+  animation-delay: 0.533333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(28) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(41) {
+  -webkit-animation-delay: 0.546666666666667s;
+  -moz-animation-delay: 0.546666666666667s;
+  -o-animation-delay: 0.546666666666667s;
+  -ms-animation-delay: 0.546666666666667s;
+  animation-delay: 0.546666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(42) {
   -webkit-animation-delay: 0.56s;
   -moz-animation-delay: 0.56s;
   -o-animation-delay: 0.56s;
   -ms-animation-delay: 0.56s;
   animation-delay: 0.56s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(29) {
-  -webkit-animation-delay: 0.58s;
-  -moz-animation-delay: 0.58s;
-  -o-animation-delay: 0.58s;
-  -ms-animation-delay: 0.58s;
-  animation-delay: 0.58s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(43) {
+  -webkit-animation-delay: 0.573333333333333s;
+  -moz-animation-delay: 0.573333333333333s;
+  -o-animation-delay: 0.573333333333333s;
+  -ms-animation-delay: 0.573333333333333s;
+  animation-delay: 0.573333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(30) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(44) {
+  -webkit-animation-delay: 0.586666666666667s;
+  -moz-animation-delay: 0.586666666666667s;
+  -o-animation-delay: 0.586666666666667s;
+  -ms-animation-delay: 0.586666666666667s;
+  animation-delay: 0.586666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(45) {
   -webkit-animation-delay: 0.6s;
   -moz-animation-delay: 0.6s;
   -o-animation-delay: 0.6s;
   -ms-animation-delay: 0.6s;
   animation-delay: 0.6s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(31) {
-  -webkit-animation-delay: 0.62s;
-  -moz-animation-delay: 0.62s;
-  -o-animation-delay: 0.62s;
-  -ms-animation-delay: 0.62s;
-  animation-delay: 0.62s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(46) {
+  -webkit-animation-delay: 0.613333333333333s;
+  -moz-animation-delay: 0.613333333333333s;
+  -o-animation-delay: 0.613333333333333s;
+  -ms-animation-delay: 0.613333333333333s;
+  animation-delay: 0.613333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(32) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(47) {
+  -webkit-animation-delay: 0.626666666666667s;
+  -moz-animation-delay: 0.626666666666667s;
+  -o-animation-delay: 0.626666666666667s;
+  -ms-animation-delay: 0.626666666666667s;
+  animation-delay: 0.626666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(48) {
   -webkit-animation-delay: 0.64s;
   -moz-animation-delay: 0.64s;
   -o-animation-delay: 0.64s;
   -ms-animation-delay: 0.64s;
   animation-delay: 0.64s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(33) {
-  -webkit-animation-delay: 0.66s;
-  -moz-animation-delay: 0.66s;
-  -o-animation-delay: 0.66s;
-  -ms-animation-delay: 0.66s;
-  animation-delay: 0.66s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(49) {
+  -webkit-animation-delay: 0.653333333333333s;
+  -moz-animation-delay: 0.653333333333333s;
+  -o-animation-delay: 0.653333333333333s;
+  -ms-animation-delay: 0.653333333333333s;
+  animation-delay: 0.653333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(34) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(50) {
+  -webkit-animation-delay: 0.666666666666667s;
+  -moz-animation-delay: 0.666666666666667s;
+  -o-animation-delay: 0.666666666666667s;
+  -ms-animation-delay: 0.666666666666667s;
+  animation-delay: 0.666666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(51) {
   -webkit-animation-delay: 0.68s;
   -moz-animation-delay: 0.68s;
   -o-animation-delay: 0.68s;
   -ms-animation-delay: 0.68s;
   animation-delay: 0.68s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(35) {
-  -webkit-animation-delay: 0.7s;
-  -moz-animation-delay: 0.7s;
-  -o-animation-delay: 0.7s;
-  -ms-animation-delay: 0.7s;
-  animation-delay: 0.7s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(52) {
+  -webkit-animation-delay: 0.693333333333333s;
+  -moz-animation-delay: 0.693333333333333s;
+  -o-animation-delay: 0.693333333333333s;
+  -ms-animation-delay: 0.693333333333333s;
+  animation-delay: 0.693333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(36) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(53) {
+  -webkit-animation-delay: 0.706666666666667s;
+  -moz-animation-delay: 0.706666666666667s;
+  -o-animation-delay: 0.706666666666667s;
+  -ms-animation-delay: 0.706666666666667s;
+  animation-delay: 0.706666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(54) {
   -webkit-animation-delay: 0.72s;
   -moz-animation-delay: 0.72s;
   -o-animation-delay: 0.72s;
   -ms-animation-delay: 0.72s;
   animation-delay: 0.72s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(37) {
-  -webkit-animation-delay: 0.74s;
-  -moz-animation-delay: 0.74s;
-  -o-animation-delay: 0.74s;
-  -ms-animation-delay: 0.74s;
-  animation-delay: 0.74s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(55) {
+  -webkit-animation-delay: 0.733333333333333s;
+  -moz-animation-delay: 0.733333333333333s;
+  -o-animation-delay: 0.733333333333333s;
+  -ms-animation-delay: 0.733333333333333s;
+  animation-delay: 0.733333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(38) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(56) {
+  -webkit-animation-delay: 0.746666666666667s;
+  -moz-animation-delay: 0.746666666666667s;
+  -o-animation-delay: 0.746666666666667s;
+  -ms-animation-delay: 0.746666666666667s;
+  animation-delay: 0.746666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(57) {
   -webkit-animation-delay: 0.76s;
   -moz-animation-delay: 0.76s;
   -o-animation-delay: 0.76s;
   -ms-animation-delay: 0.76s;
   animation-delay: 0.76s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(39) {
-  -webkit-animation-delay: 0.78s;
-  -moz-animation-delay: 0.78s;
-  -o-animation-delay: 0.78s;
-  -ms-animation-delay: 0.78s;
-  animation-delay: 0.78s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(58) {
+  -webkit-animation-delay: 0.773333333333333s;
+  -moz-animation-delay: 0.773333333333333s;
+  -o-animation-delay: 0.773333333333333s;
+  -ms-animation-delay: 0.773333333333333s;
+  animation-delay: 0.773333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(40) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(59) {
+  -webkit-animation-delay: 0.786666666666667s;
+  -moz-animation-delay: 0.786666666666667s;
+  -o-animation-delay: 0.786666666666667s;
+  -ms-animation-delay: 0.786666666666667s;
+  animation-delay: 0.786666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(60) {
   -webkit-animation-delay: 0.8s;
   -moz-animation-delay: 0.8s;
   -o-animation-delay: 0.8s;
   -ms-animation-delay: 0.8s;
   animation-delay: 0.8s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(41) {
-  -webkit-animation-delay: 0.82s;
-  -moz-animation-delay: 0.82s;
-  -o-animation-delay: 0.82s;
-  -ms-animation-delay: 0.82s;
-  animation-delay: 0.82s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(61) {
+  -webkit-animation-delay: 0.813333333333333s;
+  -moz-animation-delay: 0.813333333333333s;
+  -o-animation-delay: 0.813333333333333s;
+  -ms-animation-delay: 0.813333333333333s;
+  animation-delay: 0.813333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(42) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(62) {
+  -webkit-animation-delay: 0.826666666666667s;
+  -moz-animation-delay: 0.826666666666667s;
+  -o-animation-delay: 0.826666666666667s;
+  -ms-animation-delay: 0.826666666666667s;
+  animation-delay: 0.826666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(63) {
   -webkit-animation-delay: 0.84s;
   -moz-animation-delay: 0.84s;
   -o-animation-delay: 0.84s;
   -ms-animation-delay: 0.84s;
   animation-delay: 0.84s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(43) {
-  -webkit-animation-delay: 0.86s;
-  -moz-animation-delay: 0.86s;
-  -o-animation-delay: 0.86s;
-  -ms-animation-delay: 0.86s;
-  animation-delay: 0.86s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(64) {
+  -webkit-animation-delay: 0.853333333333333s;
+  -moz-animation-delay: 0.853333333333333s;
+  -o-animation-delay: 0.853333333333333s;
+  -ms-animation-delay: 0.853333333333333s;
+  animation-delay: 0.853333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(44) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(65) {
+  -webkit-animation-delay: 0.866666666666667s;
+  -moz-animation-delay: 0.866666666666667s;
+  -o-animation-delay: 0.866666666666667s;
+  -ms-animation-delay: 0.866666666666667s;
+  animation-delay: 0.866666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(66) {
   -webkit-animation-delay: 0.88s;
   -moz-animation-delay: 0.88s;
   -o-animation-delay: 0.88s;
   -ms-animation-delay: 0.88s;
   animation-delay: 0.88s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(45) {
-  -webkit-animation-delay: 0.9s;
-  -moz-animation-delay: 0.9s;
-  -o-animation-delay: 0.9s;
-  -ms-animation-delay: 0.9s;
-  animation-delay: 0.9s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(67) {
+  -webkit-animation-delay: 0.893333333333333s;
+  -moz-animation-delay: 0.893333333333333s;
+  -o-animation-delay: 0.893333333333333s;
+  -ms-animation-delay: 0.893333333333333s;
+  animation-delay: 0.893333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(46) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(68) {
+  -webkit-animation-delay: 0.906666666666667s;
+  -moz-animation-delay: 0.906666666666667s;
+  -o-animation-delay: 0.906666666666667s;
+  -ms-animation-delay: 0.906666666666667s;
+  animation-delay: 0.906666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(69) {
   -webkit-animation-delay: 0.92s;
   -moz-animation-delay: 0.92s;
   -o-animation-delay: 0.92s;
   -ms-animation-delay: 0.92s;
   animation-delay: 0.92s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(47) {
-  -webkit-animation-delay: 0.94s;
-  -moz-animation-delay: 0.94s;
-  -o-animation-delay: 0.94s;
-  -ms-animation-delay: 0.94s;
-  animation-delay: 0.94s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(70) {
+  -webkit-animation-delay: 0.933333333333333s;
+  -moz-animation-delay: 0.933333333333333s;
+  -o-animation-delay: 0.933333333333333s;
+  -ms-animation-delay: 0.933333333333333s;
+  animation-delay: 0.933333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(48) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(71) {
+  -webkit-animation-delay: 0.946666666666667s;
+  -moz-animation-delay: 0.946666666666667s;
+  -o-animation-delay: 0.946666666666667s;
+  -ms-animation-delay: 0.946666666666667s;
+  animation-delay: 0.946666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(72) {
   -webkit-animation-delay: 0.96s;
   -moz-animation-delay: 0.96s;
   -o-animation-delay: 0.96s;
   -ms-animation-delay: 0.96s;
   animation-delay: 0.96s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(49) {
-  -webkit-animation-delay: 0.98s;
-  -moz-animation-delay: 0.98s;
-  -o-animation-delay: 0.98s;
-  -ms-animation-delay: 0.98s;
-  animation-delay: 0.98s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(73) {
+  -webkit-animation-delay: 0.973333333333333s;
+  -moz-animation-delay: 0.973333333333333s;
+  -o-animation-delay: 0.973333333333333s;
+  -ms-animation-delay: 0.973333333333333s;
+  animation-delay: 0.973333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(50) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(74) {
+  -webkit-animation-delay: 0.986666666666667s;
+  -moz-animation-delay: 0.986666666666667s;
+  -o-animation-delay: 0.986666666666667s;
+  -ms-animation-delay: 0.986666666666667s;
+  animation-delay: 0.986666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(75) {
   -webkit-animation-delay: 1s;
   -moz-animation-delay: 1s;
   -o-animation-delay: 1s;
   -ms-animation-delay: 1s;
   animation-delay: 1s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(51) {
-  -webkit-animation-delay: 1.02s;
-  -moz-animation-delay: 1.02s;
-  -o-animation-delay: 1.02s;
-  -ms-animation-delay: 1.02s;
-  animation-delay: 1.02s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(76) {
+  -webkit-animation-delay: 1.013333333333333s;
+  -moz-animation-delay: 1.013333333333333s;
+  -o-animation-delay: 1.013333333333333s;
+  -ms-animation-delay: 1.013333333333333s;
+  animation-delay: 1.013333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(52) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(77) {
+  -webkit-animation-delay: 1.026666666666667s;
+  -moz-animation-delay: 1.026666666666667s;
+  -o-animation-delay: 1.026666666666667s;
+  -ms-animation-delay: 1.026666666666667s;
+  animation-delay: 1.026666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(78) {
   -webkit-animation-delay: 1.04s;
   -moz-animation-delay: 1.04s;
   -o-animation-delay: 1.04s;
   -ms-animation-delay: 1.04s;
   animation-delay: 1.04s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(53) {
-  -webkit-animation-delay: 1.06s;
-  -moz-animation-delay: 1.06s;
-  -o-animation-delay: 1.06s;
-  -ms-animation-delay: 1.06s;
-  animation-delay: 1.06s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(79) {
+  -webkit-animation-delay: 1.053333333333333s;
+  -moz-animation-delay: 1.053333333333333s;
+  -o-animation-delay: 1.053333333333333s;
+  -ms-animation-delay: 1.053333333333333s;
+  animation-delay: 1.053333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(54) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(80) {
+  -webkit-animation-delay: 1.066666666666667s;
+  -moz-animation-delay: 1.066666666666667s;
+  -o-animation-delay: 1.066666666666667s;
+  -ms-animation-delay: 1.066666666666667s;
+  animation-delay: 1.066666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(81) {
   -webkit-animation-delay: 1.08s;
   -moz-animation-delay: 1.08s;
   -o-animation-delay: 1.08s;
   -ms-animation-delay: 1.08s;
   animation-delay: 1.08s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(55) {
-  -webkit-animation-delay: 1.1s;
-  -moz-animation-delay: 1.1s;
-  -o-animation-delay: 1.1s;
-  -ms-animation-delay: 1.1s;
-  animation-delay: 1.1s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(82) {
+  -webkit-animation-delay: 1.093333333333333s;
+  -moz-animation-delay: 1.093333333333333s;
+  -o-animation-delay: 1.093333333333333s;
+  -ms-animation-delay: 1.093333333333333s;
+  animation-delay: 1.093333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(56) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(83) {
+  -webkit-animation-delay: 1.106666666666667s;
+  -moz-animation-delay: 1.106666666666667s;
+  -o-animation-delay: 1.106666666666667s;
+  -ms-animation-delay: 1.106666666666667s;
+  animation-delay: 1.106666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(84) {
   -webkit-animation-delay: 1.12s;
   -moz-animation-delay: 1.12s;
   -o-animation-delay: 1.12s;
   -ms-animation-delay: 1.12s;
   animation-delay: 1.12s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(57) {
-  -webkit-animation-delay: 1.14s;
-  -moz-animation-delay: 1.14s;
-  -o-animation-delay: 1.14s;
-  -ms-animation-delay: 1.14s;
-  animation-delay: 1.14s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(85) {
+  -webkit-animation-delay: 1.133333333333333s;
+  -moz-animation-delay: 1.133333333333333s;
+  -o-animation-delay: 1.133333333333333s;
+  -ms-animation-delay: 1.133333333333333s;
+  animation-delay: 1.133333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(58) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(86) {
+  -webkit-animation-delay: 1.146666666666667s;
+  -moz-animation-delay: 1.146666666666667s;
+  -o-animation-delay: 1.146666666666667s;
+  -ms-animation-delay: 1.146666666666667s;
+  animation-delay: 1.146666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(87) {
   -webkit-animation-delay: 1.16s;
   -moz-animation-delay: 1.16s;
   -o-animation-delay: 1.16s;
   -ms-animation-delay: 1.16s;
   animation-delay: 1.16s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(59) {
-  -webkit-animation-delay: 1.18s;
-  -moz-animation-delay: 1.18s;
-  -o-animation-delay: 1.18s;
-  -ms-animation-delay: 1.18s;
-  animation-delay: 1.18s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(88) {
+  -webkit-animation-delay: 1.173333333333333s;
+  -moz-animation-delay: 1.173333333333333s;
+  -o-animation-delay: 1.173333333333333s;
+  -ms-animation-delay: 1.173333333333333s;
+  animation-delay: 1.173333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(60) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(89) {
+  -webkit-animation-delay: 1.186666666666667s;
+  -moz-animation-delay: 1.186666666666667s;
+  -o-animation-delay: 1.186666666666667s;
+  -ms-animation-delay: 1.186666666666667s;
+  animation-delay: 1.186666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(90) {
   -webkit-animation-delay: 1.2s;
   -moz-animation-delay: 1.2s;
   -o-animation-delay: 1.2s;
   -ms-animation-delay: 1.2s;
   animation-delay: 1.2s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(61) {
-  -webkit-animation-delay: 1.22s;
-  -moz-animation-delay: 1.22s;
-  -o-animation-delay: 1.22s;
-  -ms-animation-delay: 1.22s;
-  animation-delay: 1.22s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(91) {
+  -webkit-animation-delay: 1.213333333333333s;
+  -moz-animation-delay: 1.213333333333333s;
+  -o-animation-delay: 1.213333333333333s;
+  -ms-animation-delay: 1.213333333333333s;
+  animation-delay: 1.213333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(62) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(92) {
+  -webkit-animation-delay: 1.226666666666667s;
+  -moz-animation-delay: 1.226666666666667s;
+  -o-animation-delay: 1.226666666666667s;
+  -ms-animation-delay: 1.226666666666667s;
+  animation-delay: 1.226666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(93) {
   -webkit-animation-delay: 1.24s;
   -moz-animation-delay: 1.24s;
   -o-animation-delay: 1.24s;
   -ms-animation-delay: 1.24s;
   animation-delay: 1.24s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(63) {
-  -webkit-animation-delay: 1.26s;
-  -moz-animation-delay: 1.26s;
-  -o-animation-delay: 1.26s;
-  -ms-animation-delay: 1.26s;
-  animation-delay: 1.26s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(94) {
+  -webkit-animation-delay: 1.253333333333333s;
+  -moz-animation-delay: 1.253333333333333s;
+  -o-animation-delay: 1.253333333333333s;
+  -ms-animation-delay: 1.253333333333333s;
+  animation-delay: 1.253333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(64) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(95) {
+  -webkit-animation-delay: 1.266666666666667s;
+  -moz-animation-delay: 1.266666666666667s;
+  -o-animation-delay: 1.266666666666667s;
+  -ms-animation-delay: 1.266666666666667s;
+  animation-delay: 1.266666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(96) {
   -webkit-animation-delay: 1.28s;
   -moz-animation-delay: 1.28s;
   -o-animation-delay: 1.28s;
   -ms-animation-delay: 1.28s;
   animation-delay: 1.28s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(65) {
-  -webkit-animation-delay: 1.3s;
-  -moz-animation-delay: 1.3s;
-  -o-animation-delay: 1.3s;
-  -ms-animation-delay: 1.3s;
-  animation-delay: 1.3s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(97) {
+  -webkit-animation-delay: 1.293333333333333s;
+  -moz-animation-delay: 1.293333333333333s;
+  -o-animation-delay: 1.293333333333333s;
+  -ms-animation-delay: 1.293333333333333s;
+  animation-delay: 1.293333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(66) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(98) {
+  -webkit-animation-delay: 1.306666666666667s;
+  -moz-animation-delay: 1.306666666666667s;
+  -o-animation-delay: 1.306666666666667s;
+  -ms-animation-delay: 1.306666666666667s;
+  animation-delay: 1.306666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(99) {
   -webkit-animation-delay: 1.32s;
   -moz-animation-delay: 1.32s;
   -o-animation-delay: 1.32s;
   -ms-animation-delay: 1.32s;
   animation-delay: 1.32s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(67) {
-  -webkit-animation-delay: 1.34s;
-  -moz-animation-delay: 1.34s;
-  -o-animation-delay: 1.34s;
-  -ms-animation-delay: 1.34s;
-  animation-delay: 1.34s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(100) {
+  -webkit-animation-delay: 1.333333333333333s;
+  -moz-animation-delay: 1.333333333333333s;
+  -o-animation-delay: 1.333333333333333s;
+  -ms-animation-delay: 1.333333333333333s;
+  animation-delay: 1.333333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(68) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(101) {
+  -webkit-animation-delay: 1.346666666666667s;
+  -moz-animation-delay: 1.346666666666667s;
+  -o-animation-delay: 1.346666666666667s;
+  -ms-animation-delay: 1.346666666666667s;
+  animation-delay: 1.346666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(102) {
   -webkit-animation-delay: 1.36s;
   -moz-animation-delay: 1.36s;
   -o-animation-delay: 1.36s;
   -ms-animation-delay: 1.36s;
   animation-delay: 1.36s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(69) {
-  -webkit-animation-delay: 1.38s;
-  -moz-animation-delay: 1.38s;
-  -o-animation-delay: 1.38s;
-  -ms-animation-delay: 1.38s;
-  animation-delay: 1.38s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(103) {
+  -webkit-animation-delay: 1.373333333333333s;
+  -moz-animation-delay: 1.373333333333333s;
+  -o-animation-delay: 1.373333333333333s;
+  -ms-animation-delay: 1.373333333333333s;
+  animation-delay: 1.373333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(70) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(104) {
+  -webkit-animation-delay: 1.386666666666667s;
+  -moz-animation-delay: 1.386666666666667s;
+  -o-animation-delay: 1.386666666666667s;
+  -ms-animation-delay: 1.386666666666667s;
+  animation-delay: 1.386666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(105) {
   -webkit-animation-delay: 1.4s;
   -moz-animation-delay: 1.4s;
   -o-animation-delay: 1.4s;
   -ms-animation-delay: 1.4s;
   animation-delay: 1.4s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(71) {
-  -webkit-animation-delay: 1.42s;
-  -moz-animation-delay: 1.42s;
-  -o-animation-delay: 1.42s;
-  -ms-animation-delay: 1.42s;
-  animation-delay: 1.42s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(106) {
+  -webkit-animation-delay: 1.413333333333333s;
+  -moz-animation-delay: 1.413333333333333s;
+  -o-animation-delay: 1.413333333333333s;
+  -ms-animation-delay: 1.413333333333333s;
+  animation-delay: 1.413333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(72) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(107) {
+  -webkit-animation-delay: 1.426666666666667s;
+  -moz-animation-delay: 1.426666666666667s;
+  -o-animation-delay: 1.426666666666667s;
+  -ms-animation-delay: 1.426666666666667s;
+  animation-delay: 1.426666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(108) {
   -webkit-animation-delay: 1.44s;
   -moz-animation-delay: 1.44s;
   -o-animation-delay: 1.44s;
   -ms-animation-delay: 1.44s;
   animation-delay: 1.44s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(73) {
-  -webkit-animation-delay: 1.46s;
-  -moz-animation-delay: 1.46s;
-  -o-animation-delay: 1.46s;
-  -ms-animation-delay: 1.46s;
-  animation-delay: 1.46s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(109) {
+  -webkit-animation-delay: 1.453333333333333s;
+  -moz-animation-delay: 1.453333333333333s;
+  -o-animation-delay: 1.453333333333333s;
+  -ms-animation-delay: 1.453333333333333s;
+  animation-delay: 1.453333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(74) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(110) {
+  -webkit-animation-delay: 1.466666666666667s;
+  -moz-animation-delay: 1.466666666666667s;
+  -o-animation-delay: 1.466666666666667s;
+  -ms-animation-delay: 1.466666666666667s;
+  animation-delay: 1.466666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(111) {
   -webkit-animation-delay: 1.48s;
   -moz-animation-delay: 1.48s;
   -o-animation-delay: 1.48s;
   -ms-animation-delay: 1.48s;
   animation-delay: 1.48s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(75) {
-  -webkit-animation-delay: 1.5s;
-  -moz-animation-delay: 1.5s;
-  -o-animation-delay: 1.5s;
-  -ms-animation-delay: 1.5s;
-  animation-delay: 1.5s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(112) {
+  -webkit-animation-delay: 1.493333333333333s;
+  -moz-animation-delay: 1.493333333333333s;
+  -o-animation-delay: 1.493333333333333s;
+  -ms-animation-delay: 1.493333333333333s;
+  animation-delay: 1.493333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(76) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(113) {
+  -webkit-animation-delay: 1.506666666666667s;
+  -moz-animation-delay: 1.506666666666667s;
+  -o-animation-delay: 1.506666666666667s;
+  -ms-animation-delay: 1.506666666666667s;
+  animation-delay: 1.506666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(114) {
   -webkit-animation-delay: 1.52s;
   -moz-animation-delay: 1.52s;
   -o-animation-delay: 1.52s;
   -ms-animation-delay: 1.52s;
   animation-delay: 1.52s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(77) {
-  -webkit-animation-delay: 1.54s;
-  -moz-animation-delay: 1.54s;
-  -o-animation-delay: 1.54s;
-  -ms-animation-delay: 1.54s;
-  animation-delay: 1.54s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(115) {
+  -webkit-animation-delay: 1.533333333333333s;
+  -moz-animation-delay: 1.533333333333333s;
+  -o-animation-delay: 1.533333333333333s;
+  -ms-animation-delay: 1.533333333333333s;
+  animation-delay: 1.533333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(78) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(116) {
+  -webkit-animation-delay: 1.546666666666667s;
+  -moz-animation-delay: 1.546666666666667s;
+  -o-animation-delay: 1.546666666666667s;
+  -ms-animation-delay: 1.546666666666667s;
+  animation-delay: 1.546666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(117) {
   -webkit-animation-delay: 1.56s;
   -moz-animation-delay: 1.56s;
   -o-animation-delay: 1.56s;
   -ms-animation-delay: 1.56s;
   animation-delay: 1.56s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(79) {
-  -webkit-animation-delay: 1.58s;
-  -moz-animation-delay: 1.58s;
-  -o-animation-delay: 1.58s;
-  -ms-animation-delay: 1.58s;
-  animation-delay: 1.58s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(118) {
+  -webkit-animation-delay: 1.573333333333333s;
+  -moz-animation-delay: 1.573333333333333s;
+  -o-animation-delay: 1.573333333333333s;
+  -ms-animation-delay: 1.573333333333333s;
+  animation-delay: 1.573333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(80) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(119) {
+  -webkit-animation-delay: 1.586666666666667s;
+  -moz-animation-delay: 1.586666666666667s;
+  -o-animation-delay: 1.586666666666667s;
+  -ms-animation-delay: 1.586666666666667s;
+  animation-delay: 1.586666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(120) {
   -webkit-animation-delay: 1.6s;
   -moz-animation-delay: 1.6s;
   -o-animation-delay: 1.6s;
   -ms-animation-delay: 1.6s;
   animation-delay: 1.6s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(81) {
-  -webkit-animation-delay: 1.62s;
-  -moz-animation-delay: 1.62s;
-  -o-animation-delay: 1.62s;
-  -ms-animation-delay: 1.62s;
-  animation-delay: 1.62s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(121) {
+  -webkit-animation-delay: 1.613333333333333s;
+  -moz-animation-delay: 1.613333333333333s;
+  -o-animation-delay: 1.613333333333333s;
+  -ms-animation-delay: 1.613333333333333s;
+  animation-delay: 1.613333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(82) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(122) {
+  -webkit-animation-delay: 1.626666666666667s;
+  -moz-animation-delay: 1.626666666666667s;
+  -o-animation-delay: 1.626666666666667s;
+  -ms-animation-delay: 1.626666666666667s;
+  animation-delay: 1.626666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(123) {
   -webkit-animation-delay: 1.64s;
   -moz-animation-delay: 1.64s;
   -o-animation-delay: 1.64s;
   -ms-animation-delay: 1.64s;
   animation-delay: 1.64s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(83) {
-  -webkit-animation-delay: 1.66s;
-  -moz-animation-delay: 1.66s;
-  -o-animation-delay: 1.66s;
-  -ms-animation-delay: 1.66s;
-  animation-delay: 1.66s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(124) {
+  -webkit-animation-delay: 1.653333333333333s;
+  -moz-animation-delay: 1.653333333333333s;
+  -o-animation-delay: 1.653333333333333s;
+  -ms-animation-delay: 1.653333333333333s;
+  animation-delay: 1.653333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(84) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(125) {
+  -webkit-animation-delay: 1.666666666666667s;
+  -moz-animation-delay: 1.666666666666667s;
+  -o-animation-delay: 1.666666666666667s;
+  -ms-animation-delay: 1.666666666666667s;
+  animation-delay: 1.666666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(126) {
   -webkit-animation-delay: 1.68s;
   -moz-animation-delay: 1.68s;
   -o-animation-delay: 1.68s;
   -ms-animation-delay: 1.68s;
   animation-delay: 1.68s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(85) {
-  -webkit-animation-delay: 1.7s;
-  -moz-animation-delay: 1.7s;
-  -o-animation-delay: 1.7s;
-  -ms-animation-delay: 1.7s;
-  animation-delay: 1.7s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(127) {
+  -webkit-animation-delay: 1.693333333333333s;
+  -moz-animation-delay: 1.693333333333333s;
+  -o-animation-delay: 1.693333333333333s;
+  -ms-animation-delay: 1.693333333333333s;
+  animation-delay: 1.693333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(86) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(128) {
+  -webkit-animation-delay: 1.706666666666667s;
+  -moz-animation-delay: 1.706666666666667s;
+  -o-animation-delay: 1.706666666666667s;
+  -ms-animation-delay: 1.706666666666667s;
+  animation-delay: 1.706666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(129) {
   -webkit-animation-delay: 1.72s;
   -moz-animation-delay: 1.72s;
   -o-animation-delay: 1.72s;
   -ms-animation-delay: 1.72s;
   animation-delay: 1.72s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(87) {
-  -webkit-animation-delay: 1.74s;
-  -moz-animation-delay: 1.74s;
-  -o-animation-delay: 1.74s;
-  -ms-animation-delay: 1.74s;
-  animation-delay: 1.74s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(130) {
+  -webkit-animation-delay: 1.733333333333333s;
+  -moz-animation-delay: 1.733333333333333s;
+  -o-animation-delay: 1.733333333333333s;
+  -ms-animation-delay: 1.733333333333333s;
+  animation-delay: 1.733333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(88) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(131) {
+  -webkit-animation-delay: 1.746666666666667s;
+  -moz-animation-delay: 1.746666666666667s;
+  -o-animation-delay: 1.746666666666667s;
+  -ms-animation-delay: 1.746666666666667s;
+  animation-delay: 1.746666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(132) {
   -webkit-animation-delay: 1.76s;
   -moz-animation-delay: 1.76s;
   -o-animation-delay: 1.76s;
   -ms-animation-delay: 1.76s;
   animation-delay: 1.76s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(89) {
-  -webkit-animation-delay: 1.78s;
-  -moz-animation-delay: 1.78s;
-  -o-animation-delay: 1.78s;
-  -ms-animation-delay: 1.78s;
-  animation-delay: 1.78s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(133) {
+  -webkit-animation-delay: 1.773333333333333s;
+  -moz-animation-delay: 1.773333333333333s;
+  -o-animation-delay: 1.773333333333333s;
+  -ms-animation-delay: 1.773333333333333s;
+  animation-delay: 1.773333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(90) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(134) {
+  -webkit-animation-delay: 1.786666666666667s;
+  -moz-animation-delay: 1.786666666666667s;
+  -o-animation-delay: 1.786666666666667s;
+  -ms-animation-delay: 1.786666666666667s;
+  animation-delay: 1.786666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(135) {
   -webkit-animation-delay: 1.8s;
   -moz-animation-delay: 1.8s;
   -o-animation-delay: 1.8s;
   -ms-animation-delay: 1.8s;
   animation-delay: 1.8s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(91) {
-  -webkit-animation-delay: 1.82s;
-  -moz-animation-delay: 1.82s;
-  -o-animation-delay: 1.82s;
-  -ms-animation-delay: 1.82s;
-  animation-delay: 1.82s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(136) {
+  -webkit-animation-delay: 1.813333333333333s;
+  -moz-animation-delay: 1.813333333333333s;
+  -o-animation-delay: 1.813333333333333s;
+  -ms-animation-delay: 1.813333333333333s;
+  animation-delay: 1.813333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(92) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(137) {
+  -webkit-animation-delay: 1.826666666666667s;
+  -moz-animation-delay: 1.826666666666667s;
+  -o-animation-delay: 1.826666666666667s;
+  -ms-animation-delay: 1.826666666666667s;
+  animation-delay: 1.826666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(138) {
   -webkit-animation-delay: 1.84s;
   -moz-animation-delay: 1.84s;
   -o-animation-delay: 1.84s;
   -ms-animation-delay: 1.84s;
   animation-delay: 1.84s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(93) {
-  -webkit-animation-delay: 1.86s;
-  -moz-animation-delay: 1.86s;
-  -o-animation-delay: 1.86s;
-  -ms-animation-delay: 1.86s;
-  animation-delay: 1.86s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(139) {
+  -webkit-animation-delay: 1.853333333333333s;
+  -moz-animation-delay: 1.853333333333333s;
+  -o-animation-delay: 1.853333333333333s;
+  -ms-animation-delay: 1.853333333333333s;
+  animation-delay: 1.853333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(94) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(140) {
+  -webkit-animation-delay: 1.866666666666667s;
+  -moz-animation-delay: 1.866666666666667s;
+  -o-animation-delay: 1.866666666666667s;
+  -ms-animation-delay: 1.866666666666667s;
+  animation-delay: 1.866666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(141) {
   -webkit-animation-delay: 1.88s;
   -moz-animation-delay: 1.88s;
   -o-animation-delay: 1.88s;
   -ms-animation-delay: 1.88s;
   animation-delay: 1.88s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(95) {
-  -webkit-animation-delay: 1.9s;
-  -moz-animation-delay: 1.9s;
-  -o-animation-delay: 1.9s;
-  -ms-animation-delay: 1.9s;
-  animation-delay: 1.9s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(142) {
+  -webkit-animation-delay: 1.893333333333333s;
+  -moz-animation-delay: 1.893333333333333s;
+  -o-animation-delay: 1.893333333333333s;
+  -ms-animation-delay: 1.893333333333333s;
+  animation-delay: 1.893333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(96) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(143) {
+  -webkit-animation-delay: 1.906666666666667s;
+  -moz-animation-delay: 1.906666666666667s;
+  -o-animation-delay: 1.906666666666667s;
+  -ms-animation-delay: 1.906666666666667s;
+  animation-delay: 1.906666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(144) {
   -webkit-animation-delay: 1.92s;
   -moz-animation-delay: 1.92s;
   -o-animation-delay: 1.92s;
   -ms-animation-delay: 1.92s;
   animation-delay: 1.92s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(97) {
-  -webkit-animation-delay: 1.94s;
-  -moz-animation-delay: 1.94s;
-  -o-animation-delay: 1.94s;
-  -ms-animation-delay: 1.94s;
-  animation-delay: 1.94s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(145) {
+  -webkit-animation-delay: 1.933333333333333s;
+  -moz-animation-delay: 1.933333333333333s;
+  -o-animation-delay: 1.933333333333333s;
+  -ms-animation-delay: 1.933333333333333s;
+  animation-delay: 1.933333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(98) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(146) {
+  -webkit-animation-delay: 1.946666666666667s;
+  -moz-animation-delay: 1.946666666666667s;
+  -o-animation-delay: 1.946666666666667s;
+  -ms-animation-delay: 1.946666666666667s;
+  animation-delay: 1.946666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(147) {
   -webkit-animation-delay: 1.96s;
   -moz-animation-delay: 1.96s;
   -o-animation-delay: 1.96s;
   -ms-animation-delay: 1.96s;
   animation-delay: 1.96s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(99) {
-  -webkit-animation-delay: 1.98s;
-  -moz-animation-delay: 1.98s;
-  -o-animation-delay: 1.98s;
-  -ms-animation-delay: 1.98s;
-  animation-delay: 1.98s;
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(148) {
+  -webkit-animation-delay: 1.973333333333333s;
+  -moz-animation-delay: 1.973333333333333s;
+  -o-animation-delay: 1.973333333333333s;
+  -ms-animation-delay: 1.973333333333333s;
+  animation-delay: 1.973333333333333s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(100) {
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(149) {
+  -webkit-animation-delay: 1.986666666666667s;
+  -moz-animation-delay: 1.986666666666667s;
+  -o-animation-delay: 1.986666666666667s;
+  -ms-animation-delay: 1.986666666666667s;
+  animation-delay: 1.986666666666667s;
+}
+.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(150) {
   -webkit-animation-delay: 2s;
   -moz-animation-delay: 2s;
   -o-animation-delay: 2s;
   -ms-animation-delay: 2s;
   animation-delay: 2s;
 }
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(101) {
-  -webkit-animation-delay: 2.02s;
-  -moz-animation-delay: 2.02s;
-  -o-animation-delay: 2.02s;
-  -ms-animation-delay: 2.02s;
-  animation-delay: 2.02s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(102) {
-  -webkit-animation-delay: 2.04s;
-  -moz-animation-delay: 2.04s;
-  -o-animation-delay: 2.04s;
-  -ms-animation-delay: 2.04s;
-  animation-delay: 2.04s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(103) {
-  -webkit-animation-delay: 2.06s;
-  -moz-animation-delay: 2.06s;
-  -o-animation-delay: 2.06s;
-  -ms-animation-delay: 2.06s;
-  animation-delay: 2.06s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(104) {
-  -webkit-animation-delay: 2.08s;
-  -moz-animation-delay: 2.08s;
-  -o-animation-delay: 2.08s;
-  -ms-animation-delay: 2.08s;
-  animation-delay: 2.08s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(105) {
-  -webkit-animation-delay: 2.1s;
-  -moz-animation-delay: 2.1s;
-  -o-animation-delay: 2.1s;
-  -ms-animation-delay: 2.1s;
-  animation-delay: 2.1s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(106) {
-  -webkit-animation-delay: 2.12s;
-  -moz-animation-delay: 2.12s;
-  -o-animation-delay: 2.12s;
-  -ms-animation-delay: 2.12s;
-  animation-delay: 2.12s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(107) {
-  -webkit-animation-delay: 2.14s;
-  -moz-animation-delay: 2.14s;
-  -o-animation-delay: 2.14s;
-  -ms-animation-delay: 2.14s;
-  animation-delay: 2.14s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(108) {
-  -webkit-animation-delay: 2.16s;
-  -moz-animation-delay: 2.16s;
-  -o-animation-delay: 2.16s;
-  -ms-animation-delay: 2.16s;
-  animation-delay: 2.16s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(109) {
-  -webkit-animation-delay: 2.18s;
-  -moz-animation-delay: 2.18s;
-  -o-animation-delay: 2.18s;
-  -ms-animation-delay: 2.18s;
-  animation-delay: 2.18s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(110) {
-  -webkit-animation-delay: 2.2s;
-  -moz-animation-delay: 2.2s;
-  -o-animation-delay: 2.2s;
-  -ms-animation-delay: 2.2s;
-  animation-delay: 2.2s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(111) {
-  -webkit-animation-delay: 2.22s;
-  -moz-animation-delay: 2.22s;
-  -o-animation-delay: 2.22s;
-  -ms-animation-delay: 2.22s;
-  animation-delay: 2.22s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(112) {
-  -webkit-animation-delay: 2.24s;
-  -moz-animation-delay: 2.24s;
-  -o-animation-delay: 2.24s;
-  -ms-animation-delay: 2.24s;
-  animation-delay: 2.24s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(113) {
-  -webkit-animation-delay: 2.26s;
-  -moz-animation-delay: 2.26s;
-  -o-animation-delay: 2.26s;
-  -ms-animation-delay: 2.26s;
-  animation-delay: 2.26s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(114) {
-  -webkit-animation-delay: 2.28s;
-  -moz-animation-delay: 2.28s;
-  -o-animation-delay: 2.28s;
-  -ms-animation-delay: 2.28s;
-  animation-delay: 2.28s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(115) {
-  -webkit-animation-delay: 2.3s;
-  -moz-animation-delay: 2.3s;
-  -o-animation-delay: 2.3s;
-  -ms-animation-delay: 2.3s;
-  animation-delay: 2.3s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(116) {
-  -webkit-animation-delay: 2.32s;
-  -moz-animation-delay: 2.32s;
-  -o-animation-delay: 2.32s;
-  -ms-animation-delay: 2.32s;
-  animation-delay: 2.32s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(117) {
-  -webkit-animation-delay: 2.34s;
-  -moz-animation-delay: 2.34s;
-  -o-animation-delay: 2.34s;
-  -ms-animation-delay: 2.34s;
-  animation-delay: 2.34s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(118) {
-  -webkit-animation-delay: 2.36s;
-  -moz-animation-delay: 2.36s;
-  -o-animation-delay: 2.36s;
-  -ms-animation-delay: 2.36s;
-  animation-delay: 2.36s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(119) {
-  -webkit-animation-delay: 2.38s;
-  -moz-animation-delay: 2.38s;
-  -o-animation-delay: 2.38s;
-  -ms-animation-delay: 2.38s;
-  animation-delay: 2.38s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(120) {
-  -webkit-animation-delay: 2.4s;
-  -moz-animation-delay: 2.4s;
-  -o-animation-delay: 2.4s;
-  -ms-animation-delay: 2.4s;
-  animation-delay: 2.4s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(121) {
-  -webkit-animation-delay: 2.42s;
-  -moz-animation-delay: 2.42s;
-  -o-animation-delay: 2.42s;
-  -ms-animation-delay: 2.42s;
-  animation-delay: 2.42s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(122) {
-  -webkit-animation-delay: 2.44s;
-  -moz-animation-delay: 2.44s;
-  -o-animation-delay: 2.44s;
-  -ms-animation-delay: 2.44s;
-  animation-delay: 2.44s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(123) {
-  -webkit-animation-delay: 2.46s;
-  -moz-animation-delay: 2.46s;
-  -o-animation-delay: 2.46s;
-  -ms-animation-delay: 2.46s;
-  animation-delay: 2.46s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(124) {
-  -webkit-animation-delay: 2.48s;
-  -moz-animation-delay: 2.48s;
-  -o-animation-delay: 2.48s;
-  -ms-animation-delay: 2.48s;
-  animation-delay: 2.48s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(125) {
-  -webkit-animation-delay: 2.5s;
-  -moz-animation-delay: 2.5s;
-  -o-animation-delay: 2.5s;
-  -ms-animation-delay: 2.5s;
-  animation-delay: 2.5s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(126) {
-  -webkit-animation-delay: 2.52s;
-  -moz-animation-delay: 2.52s;
-  -o-animation-delay: 2.52s;
-  -ms-animation-delay: 2.52s;
-  animation-delay: 2.52s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(127) {
-  -webkit-animation-delay: 2.54s;
-  -moz-animation-delay: 2.54s;
-  -o-animation-delay: 2.54s;
-  -ms-animation-delay: 2.54s;
-  animation-delay: 2.54s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(128) {
-  -webkit-animation-delay: 2.56s;
-  -moz-animation-delay: 2.56s;
-  -o-animation-delay: 2.56s;
-  -ms-animation-delay: 2.56s;
-  animation-delay: 2.56s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(129) {
-  -webkit-animation-delay: 2.58s;
-  -moz-animation-delay: 2.58s;
-  -o-animation-delay: 2.58s;
-  -ms-animation-delay: 2.58s;
-  animation-delay: 2.58s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(130) {
-  -webkit-animation-delay: 2.6s;
-  -moz-animation-delay: 2.6s;
-  -o-animation-delay: 2.6s;
-  -ms-animation-delay: 2.6s;
-  animation-delay: 2.6s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(131) {
-  -webkit-animation-delay: 2.62s;
-  -moz-animation-delay: 2.62s;
-  -o-animation-delay: 2.62s;
-  -ms-animation-delay: 2.62s;
-  animation-delay: 2.62s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(132) {
-  -webkit-animation-delay: 2.64s;
-  -moz-animation-delay: 2.64s;
-  -o-animation-delay: 2.64s;
-  -ms-animation-delay: 2.64s;
-  animation-delay: 2.64s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(133) {
-  -webkit-animation-delay: 2.66s;
-  -moz-animation-delay: 2.66s;
-  -o-animation-delay: 2.66s;
-  -ms-animation-delay: 2.66s;
-  animation-delay: 2.66s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(134) {
-  -webkit-animation-delay: 2.68s;
-  -moz-animation-delay: 2.68s;
-  -o-animation-delay: 2.68s;
-  -ms-animation-delay: 2.68s;
-  animation-delay: 2.68s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(135) {
-  -webkit-animation-delay: 2.7s;
-  -moz-animation-delay: 2.7s;
-  -o-animation-delay: 2.7s;
-  -ms-animation-delay: 2.7s;
-  animation-delay: 2.7s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(136) {
-  -webkit-animation-delay: 2.72s;
-  -moz-animation-delay: 2.72s;
-  -o-animation-delay: 2.72s;
-  -ms-animation-delay: 2.72s;
-  animation-delay: 2.72s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(137) {
-  -webkit-animation-delay: 2.74s;
-  -moz-animation-delay: 2.74s;
-  -o-animation-delay: 2.74s;
-  -ms-animation-delay: 2.74s;
-  animation-delay: 2.74s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(138) {
-  -webkit-animation-delay: 2.76s;
-  -moz-animation-delay: 2.76s;
-  -o-animation-delay: 2.76s;
-  -ms-animation-delay: 2.76s;
-  animation-delay: 2.76s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(139) {
-  -webkit-animation-delay: 2.78s;
-  -moz-animation-delay: 2.78s;
-  -o-animation-delay: 2.78s;
-  -ms-animation-delay: 2.78s;
-  animation-delay: 2.78s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(140) {
-  -webkit-animation-delay: 2.8s;
-  -moz-animation-delay: 2.8s;
-  -o-animation-delay: 2.8s;
-  -ms-animation-delay: 2.8s;
-  animation-delay: 2.8s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(141) {
-  -webkit-animation-delay: 2.82s;
-  -moz-animation-delay: 2.82s;
-  -o-animation-delay: 2.82s;
-  -ms-animation-delay: 2.82s;
-  animation-delay: 2.82s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(142) {
-  -webkit-animation-delay: 2.84s;
-  -moz-animation-delay: 2.84s;
-  -o-animation-delay: 2.84s;
-  -ms-animation-delay: 2.84s;
-  animation-delay: 2.84s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(143) {
-  -webkit-animation-delay: 2.86s;
-  -moz-animation-delay: 2.86s;
-  -o-animation-delay: 2.86s;
-  -ms-animation-delay: 2.86s;
-  animation-delay: 2.86s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(144) {
-  -webkit-animation-delay: 2.88s;
-  -moz-animation-delay: 2.88s;
-  -o-animation-delay: 2.88s;
-  -ms-animation-delay: 2.88s;
-  animation-delay: 2.88s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(145) {
-  -webkit-animation-delay: 2.9s;
-  -moz-animation-delay: 2.9s;
-  -o-animation-delay: 2.9s;
-  -ms-animation-delay: 2.9s;
-  animation-delay: 2.9s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(146) {
-  -webkit-animation-delay: 2.92s;
-  -moz-animation-delay: 2.92s;
-  -o-animation-delay: 2.92s;
-  -ms-animation-delay: 2.92s;
-  animation-delay: 2.92s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(147) {
-  -webkit-animation-delay: 2.94s;
-  -moz-animation-delay: 2.94s;
-  -o-animation-delay: 2.94s;
-  -ms-animation-delay: 2.94s;
-  animation-delay: 2.94s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(148) {
-  -webkit-animation-delay: 2.96s;
-  -moz-animation-delay: 2.96s;
-  -o-animation-delay: 2.96s;
-  -ms-animation-delay: 2.96s;
-  animation-delay: 2.96s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(149) {
-  -webkit-animation-delay: 2.98s;
-  -moz-animation-delay: 2.98s;
-  -o-animation-delay: 2.98s;
-  -ms-animation-delay: 2.98s;
-  animation-delay: 2.98s;
-}
-.rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(150) {
-  -webkit-animation-delay: 3s;
-  -moz-animation-delay: 3s;
-  -o-animation-delay: 3s;
-  -ms-animation-delay: 3s;
-  animation-delay: 3s;
-}
 .rateframe > .rates > .rate > .graph > .inner > .zone.full > .dots > .dot.bluedot {
   background-color: #44c8f5;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone.full > .dots > .dot.orangedot {
-  background-color: #efbd61;
+  background-color: #e9b91a;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone.full > .dots > .dot.partialdot {
   background-color: #ced1a8;
@@ -1304,7 +1304,7 @@ body {
 }
 .rateframe > .rates > .rate > .slider {
   height: 4em;
-  margin: 1em 3em 0 1em;
+  margin: 1em 1.5em 0 0.75em;
   position: relative;
 }
 .rateframe > .rates > .rate > .slider > .slide {
@@ -1408,12 +1408,11 @@ body {
   line-height: 10px;
 }
 .rateframe > .rates > .rate > .slider > .bar {
-  width: 100%;
   height: 0.7em;
   background-color: #c8c8c8;
   -webkit-border-radius: 1em;
   border-radius: 1em;
-  margin: 2em 0 0 1em;
+  margin: 2em 0 0 2em;
 }
 .rateframe > .footer {
   padding: 0 1em 1em 1em;
@@ -1497,15 +1496,15 @@ body {
 }
 .rate_a1_summer > .graph > .inner > .zone.z1 {
   left: 0;
-  width: 13.7em;
+  width: 14.1em;
   height: 6.4em;
 }
 .rate_a1_summer > .graph > .inner > .zone.z1 > .dots {
   width: 18em !important;
 }
 .rate_a1_summer > .graph > .inner > .zone.z2 {
-  left: 13.9em;
-  width: 5.62em;
+  left: 14.3em;
+  width: 5.6em;
   height: 9.6em;
 }
 .rate_a1_summer > .graph > .inner > .zone.z2 > .dots {
@@ -1513,7 +1512,7 @@ body {
   width: 8em !important;
 }
 .rate_a1_summer > .graph > .inner > .zone.z3 {
-  left: 19.5em;
+  left: 19.7em;
   width: 9.7em;
   height: 11.2em;
 }
@@ -1522,14 +1521,14 @@ body {
 }
 .rate_a1_summer > .graph > .inner > .zone.z4 {
   left: 29.2em;
-  width: 5.6em;
+  width: 5.9em;
   height: 9.6em;
 }
 .rate_a1_summer > .graph > .inner > .zone.z4 > .dots {
   width: 8em !important;
 }
 .rate_a1_summer > .graph > .inner > .zone.z5 {
-  left: 35.1em;
+  left: 35.3em;
   width: 3.9em;
   height: 6.4em;
 }
@@ -1541,16 +1540,16 @@ body {
   margin-top: 0.7em;
 }
 .rate_a1_summer > .graph > .bottommeasure > .measure.m1 {
-  width: 13.8em;
+  width: 14.1em;
 }
 .rate_a1_summer > .graph > .bottommeasure > .measure.m2 {
-  width: 5.9em;
+  width: 5.6em;
 }
 .rate_a1_summer > .graph > .bottommeasure > .measure.m3 {
   width: 9.7em;
 }
 .rate_a1_summer > .graph > .bottommeasure > .measure.m4 {
-  width: 5.4em;
+  width: 5.9em;
 }
 .rate_a1_summer > .graph > .bottommeasure > .measure.m5 {
   width: 1em;
@@ -1580,7 +1579,7 @@ body {
 }
 .rate_a1_winter > .graph > .inner > .zone.z2 {
   left: 14.1em;
-  width: 20.8em;
+  width: 21em;
   height: 8em;
 }
 .rate_a1_winter > .graph > .inner > .zone.z2 > .dots {
@@ -1588,8 +1587,8 @@ body {
   width: 28em !important;
 }
 .rate_a1_winter > .graph > .inner > .zone.z3 {
-  left: 35.1em;
-  width: 3.9em;
+  left: 35.3em;
+  width: 3.8em;
   height: 4.8em;
 }
 .rate_a1_winter > .graph > .inner > .zone.z3 > .dots {
@@ -1616,15 +1615,15 @@ body {
 }
 .rate_a1_summer_day > .graph > .inner > .zone.z1 {
   left: 0;
-  width: 13.7em;
+  width: 14em;
   height: 6.4em;
 }
 .rate_a1_summer_day > .graph > .inner > .zone.z1 > .dots {
   width: 18em !important;
 }
 .rate_a1_summer_day > .graph > .inner > .zone.z2 {
-  left: 13.9em;
-  width: 5.62em;
+  left: 14.2em;
+  width: 5.6em;
   height: 9.6em;
 }
 .rate_a1_summer_day > .graph > .inner > .zone.z2 > .dots {
@@ -1632,7 +1631,7 @@ body {
   width: 8em !important;
 }
 .rate_a1_summer_day > .graph > .inner > .zone.z3 {
-  left: 19.5em;
+  left: 19.7em;
   width: 3.4em;
   height: 11.2em;
 }
@@ -1640,7 +1639,7 @@ body {
   width: 13em !important;
 }
 .rate_a1_summer_day > .graph > .inner > .zone.z6 {
-  left: 22.7em;
+  left: 22.8em;
   width: 6.8em;
   height: 17.6em;
 }
@@ -1649,14 +1648,14 @@ body {
 }
 .rate_a1_summer_day > .graph > .inner > .zone.z4 {
   left: 29.2em;
-  width: 5.6em;
+  width: 5.9em;
   height: 9.6em;
 }
 .rate_a1_summer_day > .graph > .inner > .zone.z4 > .dots {
   width: 8em !important;
 }
 .rate_a1_summer_day > .graph > .inner > .zone.z5 {
-  left: 35.1em;
+  left: 35.3em;
   width: 3.9em;
   height: 6.4em;
 }

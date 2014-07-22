@@ -61,7 +61,7 @@ rate =
   
   # update the price if we have a new one
   newprice: (zone, name) ->
-    return true if rate.prices[name] is zone.price or zone.price is undefined
+    return true if zone.price is undefined or rate.prices[name] is zone.price or zone.price is undefined
     rate.els[name].slide.find('.price').html '$' + zone.price
     rate.prices[name] = zone.price
     $('.zone').removeClass 'full'

@@ -26,6 +26,12 @@ body {
 .clear:after {
   clear: both;
 }
+.links {
+  font-size: 2em;
+}
+.links > ul > li > a {
+  line-height: 1.2em;
+}
 .rateframe {
   overflow: hidden;
   border: 0.1em solid #c8c8c8;
@@ -45,7 +51,7 @@ body {
 }
 .rateframe > .buttons {
   float: right;
-  margin: 0.5em 0;
+  margin: 0.5em 0.1em;
 }
 .rateframe > .buttons.buttons_center {
   float: none;
@@ -152,16 +158,22 @@ body {
   font-family: DINPro-Medium, arial, helvetica, sans-serif;
   line-height: 1.3em;
 }
+.rateframe > .rates > .rate > .title.longtitle {
+  margin-right: 8em;
+}
 .rateframe > .rates > .rate > .graph {
   position: relative;
   margin: 0 1.3em 0 0.8em;
 }
 .rateframe > .rates > .rate > .graph > .flatrate {
   position: absolute;
-  top: 6.15em;
+  top: 7em;
   left: 2.5em;
   border-bottom: 0.1em solid #c8c8c8;
   width: 43em;
+}
+.rateframe > .rates > .rate > .graph > .flatrate.higher {
+  top: 5.35em;
 }
 .rateframe > .rates > .rate > .graph > .leftmeasure {
   position: absolute;
@@ -1424,78 +1436,389 @@ body {
 }
 .rate_ag4a_summer > .graph > .inner > .zone.z1 {
   left: 0;
-  width: 22em;
-  height: 5.4em;
+  width: 19.4em;
+  height: 4.8em;
+}
+.rate_ag4a_summer > .graph > .inner > .zone.z1 > .dots {
+  width: 22em !important;
 }
 .rate_ag4a_summer > .graph > .inner > .zone.z2 {
-  left: 22em;
-  width: 11em;
-  height: 10.8em;
+  left: 19.4em;
+  width: 9.7em;
+  height: 9.6em;
 }
 .rate_ag4a_summer > .graph > .inner > .zone.z2 > .dots {
-  width: 13em !important;
+  width: 10em !important;
 }
 .rate_ag4a_summer > .graph > .inner > .zone.z3 {
-  left: 33em;
-  width: 11em;
-  height: 5.4em;
+  left: 29.1em;
+  width: 9.7em;
+  height: 4.8em;
+}
+.rate_ag4a_summer > .graph > .inner > .zone.z3 > .dots {
+  width: 11em !important;
+}
+.rateframe > .rates > .rate.rate_ag4a_summer > .legend {
+  margin-top: 0.7em;
 }
 .rate_ag4a_summer > .graph > .bottommeasure > .measure.m1 {
-  width: 22.1em;
+  width: 19.4em;
 }
 .rate_ag4a_summer > .graph > .bottommeasure > .measure.m2 {
-  width: 11em;
+  width: 9.7em;
 }
 .rate_ag4a_summer > .graph > .bottommeasure > .measure.m3 {
-  width: 1em;
+  width: 9.7em;
 }
 .rate_ag4a_summer > .graph > .bottomtext > .measure.m1 {
-  width: 21em;
+  width: 19.4em;
 }
 .rate_ag4a_summer > .graph > .bottomtext > .measure.m2 {
-  width: 10.6em;
+  width: 9.7em;
 }
 .rate_ag4a_summer > .graph > .bottomtext > .measure.m3 {
-  width: 11em;
+  width: 9.7em;
 }
 .rate_ag4a_winter > .graph > .inner > .zone.z1 {
   left: 0;
-  width: 15.7em;
-  height: 3.6em;
+  width: 13.9em;
+  height: 4.8em;
+}
+.rate_ag4a_winter > .graph > .inner > .zone.z1 > .dots {
+  width: 18em !important;
 }
 .rate_ag4a_winter > .graph > .inner > .zone.z2 {
-  left: 16.1em;
-  width: 23.6em;
-  height: 5.4em;
+  left: 14.1em;
+  width: 21em;
+  height: 6.4em;
 }
 .rate_ag4a_winter > .graph > .inner > .zone.z2 > .dots {
   margin-left: -1em;
+  width: 24em !important;
 }
 .rate_ag4a_winter > .graph > .inner > .zone.z3 {
-  left: 40.2em;
+  left: 35.3em;
   width: 3.8em;
-  height: 3.6em;
+  height: 4.8em;
 }
 .rate_ag4a_winter > .graph > .inner > .zone.z3 > .dots {
-  margin-left: -1.2em;
+  width: 7em !important;
+  margin-left: -1em;
 }
 .rate_ag4a_winter > .graph > .bottommeasure > .measure.m1 {
-  width: 15.8em;
+  width: 13.9em;
 }
 .rate_ag4a_winter > .graph > .bottommeasure > .measure.m2 {
-  width: 24.1em;
+  width: 21.3em;
 }
 .rate_ag4a_winter > .graph > .bottommeasure > .measure.m3 {
   width: 1em;
 }
 .rate_ag4a_winter > .graph > .bottomtext > .measure.m1 {
-  width: 14.4em;
+  width: 12.5em;
 }
 .rate_ag4a_winter > .graph > .bottomtext > .measure.m2 {
-  width: 24em;
+  width: 21em;
 }
 .rate_ag4a_winter > .graph > .bottomtext > .measure.m3 {
-  width: 5.4em;
+  width: 1em;
+}
+.rate_ag4a_summer_day > .graph > .inner > .zone.z1 {
+  left: 0;
+  width: 14em;
+  height: 6.4em;
+}
+.rate_ag4a_summer_day > .graph > .inner > .zone.z1 > .dots {
+  width: 18em !important;
+}
+.rate_ag4a_summer_day > .graph > .inner > .zone.z2 {
+  left: 14.2em;
+  width: 5.6em;
+  height: 9.6em;
+}
+.rate_ag4a_summer_day > .graph > .inner > .zone.z2 > .dots {
+  margin-left: -0.8em;
+  width: 8em !important;
+}
+.rate_ag4a_summer_day > .graph > .inner > .zone.z3 {
+  left: 19.7em;
+  width: 3.4em;
+  height: 11.2em;
+}
+.rate_ag4a_summer_day > .graph > .inner > .zone.z3 > .dots {
+  width: 13em !important;
+}
+.rate_ag4a_summer_day > .graph > .inner > .zone.z6 {
+  left: 22.8em;
+  width: 6.8em;
+  height: 17.6em;
+}
+.rate_ag4a_summer_day > .graph > .inner > .zone.z6 > .dots {
+  width: 13em !important;
+}
+.rate_ag4a_summer_day > .graph > .inner > .zone.z4 {
+  left: 29.2em;
+  width: 5.9em;
+  height: 9.6em;
+}
+.rate_ag4a_summer_day > .graph > .inner > .zone.z4 > .dots {
+  width: 8em !important;
+}
+.rate_ag4a_summer_day > .graph > .inner > .zone.z5 {
+  left: 35.3em;
+  width: 3.9em;
+  height: 6.4em;
+}
+.rate_ag4a_summer_day > .graph > .inner > .zone.z5 > .dots {
+  margin-left: -1.1em;
+  width: 6em !important;
+}
+.rate_ag4a_summer_day > .graph > .bottommeasure > .measure.m1 {
+  width: 14.1em;
+}
+.rate_ag4a_summer_day > .graph > .bottommeasure > .measure.m2 {
+  width: 5.9em;
+}
+.rate_ag4a_summer_day > .graph > .bottommeasure > .measure.m3 {
+  width: 3.1em;
+}
+.rate_ag4a_summer_day > .graph > .bottommeasure > .measure.m4 {
+  width: 6.3em;
+}
+.rate_ag4a_summer_day > .graph > .bottommeasure > .measure.m5 {
+  width: 5.7em;
+}
+.rate_ag4a_summer_day > .graph > .bottommeasure > .measure.m6 {
+  width: 1em;
+}
+.rate_ag4a_summer_day > .graph > .bottomtext > .measure.m1 {
+  width: 13.1em;
+}
+.rate_ag4a_summer_day > .graph > .bottomtext > .measure.m2 {
+  width: 5.2em;
+}
+.rate_ag4a_summer_day > .graph > .bottomtext > .measure.m3 {
+  width: 4.1em;
+}
+.rate_ag4a_summer_day > .graph > .bottomtext > .measure.m4 {
+  width: 5.7em;
+}
+.rate_ag4a_summer_day > .graph > .bottomtext > .measure.m5 {
+  width: 6em;
+}
+.rate_ag4a_summer_day > .graph > .bottomtext > .measure.m6 {
+  width: 1em;
+}
+.rateframe > .rates > .rate.rate_ag4a_summer_day > .legend > .legendzone > .copy {
+  margin-right: 0.2em;
+}
+.rate_a1p_summer > .graph > .inner > .zone.z1 {
+  left: 0;
+  width: 14.1em;
+  height: 6.4em;
+}
+.rate_a1p_summer > .graph > .inner > .zone.z1 > .dots {
+  width: 18em !important;
+}
+.rate_a1p_summer > .graph > .inner > .zone.z2 {
+  left: 14.3em;
+  width: 5.6em;
+  height: 9.6em;
+}
+.rate_a1p_summer > .graph > .inner > .zone.z2 > .dots {
+  margin-left: -0.8em;
+  width: 8em !important;
+}
+.rate_a1p_summer > .graph > .inner > .zone.z3 {
+  left: 19.7em;
+  width: 9.7em;
+  height: 11.2em;
+}
+.rate_a1p_summer > .graph > .inner > .zone.z3 > .dots {
+  width: 13em !important;
+}
+.rate_a1p_summer > .graph > .inner > .zone.z4 {
+  left: 29.2em;
+  width: 5.9em;
+  height: 9.6em;
+}
+.rate_a1p_summer > .graph > .inner > .zone.z4 > .dots {
+  width: 8em !important;
+}
+.rate_a1p_summer > .graph > .inner > .zone.z5 {
+  left: 35.3em;
+  width: 3.9em;
+  height: 6.4em;
+}
+.rate_a1p_summer > .graph > .inner > .zone.z5 > .dots {
+  margin-left: -1.1em;
+  width: 6em !important;
+}
+.rateframe > .rates > .rate.rate_a1p_summer > .legend {
+  margin-top: 0.7em;
+}
+.rate_a1p_summer > .graph > .bottommeasure > .measure.m1 {
+  width: 14.1em;
+}
+.rate_a1p_summer > .graph > .bottommeasure > .measure.m2 {
+  width: 5.9em;
+}
+.rate_a1p_summer > .graph > .bottommeasure > .measure.m3 {
+  width: 9.5em;
+}
+.rate_a1p_summer > .graph > .bottommeasure > .measure.m4 {
+  width: 5.6em;
+}
+.rate_a1p_summer > .graph > .bottommeasure > .measure.m5 {
+  width: 1em;
+}
+.rate_a1p_summer > .graph > .bottomtext > .measure.m1 {
+  width: 12.1em;
+}
+.rate_a1p_summer > .graph > .bottomtext > .measure.m2 {
+  width: 6.4em;
+}
+.rate_a1p_summer > .graph > .bottomtext > .measure.m3 {
+  width: 9.8em;
+}
+.rate_a1p_summer > .graph > .bottomtext > .measure.m4 {
+  width: 5em;
+}
+.rate_a1p_summer > .graph > .bottomtext > .measure.m5 {
+  width: 4em;
+}
+.rate_a1p_winter > .graph > .inner > .zone.z1 {
+  left: 0;
+  width: 13.9em;
+  height: 4.8em;
+}
+.rate_a1p_winter > .graph > .inner > .zone.z1 > .dots {
+  width: 18em !important;
+}
+.rate_a1p_winter > .graph > .inner > .zone.z2 {
+  left: 14.1em;
+  width: 21em;
+  height: 8em;
+}
+.rate_a1p_winter > .graph > .inner > .zone.z2 > .dots {
+  margin-left: -1em;
+  width: 28em !important;
+}
+.rate_a1p_winter > .graph > .inner > .zone.z3 {
+  left: 35.3em;
+  width: 3.8em;
+  height: 4.8em;
+}
+.rate_a1p_winter > .graph > .inner > .zone.z3 > .dots {
+  width: 7em !important;
+  margin-left: -1em;
+}
+.rate_a1p_winter > .graph > .bottommeasure > .measure.m1 {
+  width: 13.9em;
+}
+.rate_a1p_winter > .graph > .bottommeasure > .measure.m2 {
+  width: 21.3em;
+}
+.rate_a1p_winter > .graph > .bottommeasure > .measure.m3 {
+  width: 1em;
+}
+.rate_a1p_winter > .graph > .bottomtext > .measure.m1 {
+  width: 12.5em;
+}
+.rate_a1p_winter > .graph > .bottomtext > .measure.m2 {
+  width: 21em;
+}
+.rate_a1p_winter > .graph > .bottomtext > .measure.m3 {
+  width: 1em;
+}
+.rate_a1p_summer_day > .graph > .inner > .zone.z1 {
+  left: 0;
+  width: 14em;
+  height: 6.4em;
+}
+.rate_a1p_summer_day > .graph > .inner > .zone.z1 > .dots {
+  width: 18em !important;
+}
+.rate_a1p_summer_day > .graph > .inner > .zone.z2 {
+  left: 14.2em;
+  width: 5.6em;
+  height: 9.6em;
+}
+.rate_a1p_summer_day > .graph > .inner > .zone.z2 > .dots {
+  margin-left: -0.8em;
+  width: 8em !important;
+}
+.rate_a1p_summer_day > .graph > .inner > .zone.z3 {
+  left: 19.7em;
+  width: 3.4em;
+  height: 11.2em;
+}
+.rate_a1p_summer_day > .graph > .inner > .zone.z3 > .dots {
+  width: 13em !important;
+}
+.rate_a1p_summer_day > .graph > .inner > .zone.z6 {
+  left: 22.8em;
+  width: 6.8em;
+  height: 17.6em;
+}
+.rate_a1p_summer_day > .graph > .inner > .zone.z6 > .dots {
+  width: 13em !important;
+}
+.rate_a1p_summer_day > .graph > .inner > .zone.z4 {
+  left: 29.2em;
+  width: 5.9em;
+  height: 9.6em;
+}
+.rate_a1p_summer_day > .graph > .inner > .zone.z4 > .dots {
+  width: 8em !important;
+}
+.rate_a1p_summer_day > .graph > .inner > .zone.z5 {
+  left: 35.3em;
+  width: 3.9em;
+  height: 6.4em;
+}
+.rate_a1p_summer_day > .graph > .inner > .zone.z5 > .dots {
+  margin-left: -1.1em;
+  width: 6em !important;
+}
+.rate_a1p_summer_day > .graph > .bottommeasure > .measure.m1 {
+  width: 14.1em;
+}
+.rate_a1p_summer_day > .graph > .bottommeasure > .measure.m2 {
+  width: 5.9em;
+}
+.rate_a1p_summer_day > .graph > .bottommeasure > .measure.m3 {
+  width: 3.1em;
+}
+.rate_a1p_summer_day > .graph > .bottommeasure > .measure.m4 {
+  width: 6.3em;
+}
+.rate_a1p_summer_day > .graph > .bottommeasure > .measure.m5 {
+  width: 5.7em;
+}
+.rate_a1p_summer_day > .graph > .bottommeasure > .measure.m6 {
+  width: 1em;
+}
+.rate_a1p_summer_day > .graph > .bottomtext > .measure.m1 {
+  width: 13.1em;
+}
+.rate_a1p_summer_day > .graph > .bottomtext > .measure.m2 {
+  width: 5.2em;
+}
+.rate_a1p_summer_day > .graph > .bottomtext > .measure.m3 {
+  width: 4.1em;
+}
+.rate_a1p_summer_day > .graph > .bottomtext > .measure.m4 {
+  width: 5.7em;
+}
+.rate_a1p_summer_day > .graph > .bottomtext > .measure.m5 {
+  width: 6em;
+}
+.rate_a1p_summer_day > .graph > .bottomtext > .measure.m6 {
+  width: 1em;
+}
+.rateframe > .rates > .rate.rate_a1p_summer_day > .legend > .legendzone > .copy {
+  margin-right: 0.2em;
 }
 .rate_a1_summer > .graph > .inner > .zone.z1 {
   left: 0;
@@ -1641,14 +1964,6 @@ body {
 .rate_a1_summer_day > .graph > .inner > .zone.z3 > .dots {
   width: 13em !important;
 }
-.rate_a1_summer_day > .graph > .inner > .zone.z6 {
-  left: 22.8em;
-  width: 6.8em;
-  height: 17.6em;
-}
-.rate_a1_summer_day > .graph > .inner > .zone.z6 > .dots {
-  width: 13em !important;
-}
 .rate_a1_summer_day > .graph > .inner > .zone.z4 {
   left: 29.2em;
   width: 5.9em;
@@ -1681,9 +1996,6 @@ body {
 .rate_a1_summer_day > .graph > .bottommeasure > .measure.m5 {
   width: 5.7em;
 }
-.rate_a1_summer_day > .graph > .bottommeasure > .measure.m6 {
-  width: 1em;
-}
 .rate_a1_summer_day > .graph > .bottomtext > .measure.m1 {
   width: 13.1em;
 }
@@ -1698,9 +2010,6 @@ body {
 }
 .rate_a1_summer_day > .graph > .bottomtext > .measure.m5 {
   width: 6em;
-}
-.rate_a1_summer_day > .graph > .bottomtext > .measure.m6 {
-  width: 1em;
 }
 .rateframe > .rates > .rate.rate_a1_summer_day > .legend > .legendzone > .copy {
   margin-right: 0.2em;

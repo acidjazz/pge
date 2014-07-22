@@ -6,38 +6,8 @@ include mixins
 extends layout
 block content
  
-  .clear
-  //-
-    .rateframe.rateframe_ag4a
-      .topcopy Choose winter or summer.  Drag slider to compare on- and off-peak rates.*
-
-      .buttons
-        .button(data-rate='.rate_ag4a_winter') Winter Rate
-        .button.active(data-rate='.rate_ag4a_summer') Summer Rate
-      .clear
-
-      .rates
-        .rate.rate_ag4a_summer.on
-          include rate_ag4a_summer
-        .rate.rate_ag4a_winter.off
-          include rate_ag4a_winter
-      .footer * Based on AG4A rates per kWh as of 5/1/14.  See more deatils on the other AG4 and AG5 agriculture rates.  Customers and Demand Charges apply in addition to the kWh charges shown.  Electric rates subject to change.
-
-  .rateframe.rateframe_a1
-    .topcopy.topcopy_top Choose winter, summer or summer event day.  Drag slider to compare on- and off-peak rates.*
-
-    .buttons.buttons_center
-      .button(data-rate='.rate_a1_winter') Winter Rate
-      .button.active(data-rate='.rate_a1_summer') Summer Rate
-      .button.button_long(data-rate='.rate_a1_summer_day') Summer Event Day Rate
-    .clear
-
-    .rates
-      .rate.rate_a1_summer.on
-        include rate_a1_summer
-      .rate.rate_a1_winter.off
-        include rate_a1_winter
-      .rate.rate_a1_summer_day.off
-        include rate_a1_summer_day
- 
-    .footer * Based on A1 rates per kWh as of 5/1/14.  Customer charges apply in addition to the kWh charges shown.  Rates subject to change.  See more details on A1, A6 and A10 business electric rates.  Rates shown reflect the net rate after the PDP surcharges and credits have been applied.
+  .links
+    ul
+      li: a(href='./a1p.html') A1 Peak Day Pricing
+      li: a(href='./a1.html') A1 Time-of-Use Pricing
+      li: a(href='./ag4a.html') AG4A Time-of-Use

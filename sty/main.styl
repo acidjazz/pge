@@ -27,6 +27,11 @@ body
 .clear
   clearfix()
 
+.links
+  font-size 2em
+  > ul > li > a
+    line-height 1.2em
+
 .rateframe
   overflow hidden
   border 0.1em solid c_border
@@ -45,7 +50,7 @@ body
       text-align center
   > .buttons
     float right
-    margin 0.5em 0
+    margin 0.5em 0.1em
     &.buttons_center
       float none
       text-align center
@@ -111,16 +116,20 @@ body
         padding-top 1em
         font-family DINPro-Medium,arial,helvetica,sans-serif 
         line-height 1.3em
+        &.longtitle
+          margin-right 8em
 
       > .graph
         position relative
         margin 0 1.3em 0 .8em 
         > .flatrate
           position absolute
-          top 6.15em
+          top 7em
           left 2.5em
           border-bottom 0.1em solid c_border
           width 43em
+          &.higher
+            top 5.35em
 
         > .leftmeasure
           position absolute
@@ -268,6 +277,7 @@ body
     line-height 1em
 
 @import _ag4a
+@import _a1p
 @import _a1
 
 @keyframes dotIn

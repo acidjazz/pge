@@ -1,4 +1,5 @@
 
+
 /*
 stylus -w sty/main.styl -o css/.  
 */
@@ -152,11 +153,11 @@ body
                 &.bluedot
                   background-color rgba(c_blue, 0.8)
                 &.orangedot
-                  background-color rgba(c_orange, 0.8)
+                  background-color rgba(c_orange, 0.7)
                 &.partialdot
                   background-color rgba(c_partial, 0.8)
                 &.boldorangedot
-                  background-color rgba(c_bold_orange, 0.9)
+                  background-color rgba(c_bold_orange, 0.7)
               for r in 1..150
                 .dot:nth-child({r})
                   animation-delay (r / 75)s
@@ -166,6 +167,8 @@ body
               background-color rgba(c_orange, 1)
             &.full > .dots > .dot.partialdot
               background-color rgba(c_partial, 1)
+            &.full.z6 > .dots > .dot.orangedot
+              background-color rgba(c_orange, 0.7) !important
             &.full > .dots > .dot.boldorangedot
               background-color rgba(c_bold_orange, 1)
 

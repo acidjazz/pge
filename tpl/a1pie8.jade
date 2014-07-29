@@ -1,0 +1,55 @@
+
+//
+  jade -w tpl/a1pie8.jade -O cfg/config.json -P  -o .
+
+include mixins
+doctype
+
+html(lang='en')
+  head
+    title !{cfg.meta.title}
+
+    link(rel='stylesheet',href='./css/main.css',type='text/css',media='all')
+    script(type='text/javascript', src='./jst/lib/jquery1.min.js')
+    script(type='text/javascript', src='./jst/lib/jquery.drag.js')
+
+    script(type='text/javascript', src='./jst/main.js')
+    script(type='text/javascript', src='./jst/pge.js')
+    script(type='text/javascript', src='./jst/rate.js')
+
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(http-equiv="X-UA-Compatible",content="IE=Edge")
+    meta(name='format-detection', content='telephone=no')
+    meta(name='viewport', content='user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height')
+ 
+  body
+    .rateframe.rateframe_a1p
+      .topcopy.topcopy_top Choose Winter, Summer or Summer Event Day.  Drag slider to compare on- and off-peak rates.*
+
+      .buttons.buttons_center
+        .button(data-rate='.rate_a1p_winter') Winter Rate
+        .button.active(data-rate='.rate_a1p_summer') Summer Rate
+        .button.button_long(data-rate='.rate_a1p_summer_day') Summer Event Day Rate
+      .clear
+
+      .rates
+        .rate.rate_a1p_summer.on
+          include rate_a1p_summer
+        .rate.rate_a1p_winter.off
+          include rate_a1p_winter
+        .rate.rate_a1p_summer_day.off
+          include rate_a1p_summer_day
+   
+      .footer * Based on A1 rates per kWh as of 5/1/14.  Customer charges apply in addition to the kWh charges shown.  Rates subject to change.  See more details on A1, A6 and A10 business electric rates.
+
+  script(type='text/javascript').
+
+    window.cfg = !{JSON.stringify(cfg)};
+
+    pge.i();
+    rate.i('.rate_ag4a_summer');
+    rate.i('.rate_ag4a_winter');
+
+    rate.i('.rate_a1_summer');
+    rate.i('.rate_a1p_summer');
+

@@ -18,8 +18,8 @@ rate =
 
     rate.els[name].slide = $ rate.el.find '.slide'
     rate.els[name].slider = $ rate.el.find '.slider'
-    rate.points[name].start = - ( rate.els[name].slide.width()/2 )
-    rate.points[name].end = rate.els[name].slider.width() - (rate.els[name].slide.width()/2)
+    rate.points[name].start = - (rate.els[name].slide.width()/2) - 15
+    rate.points[name].end = rate.els[name].slider.width() - (rate.els[name].slide.width()/2) - 15
 
     rate.el.find('.zone').each( (i, el) ->
       rate.zones[name].push
@@ -35,7 +35,7 @@ rate =
     rate.handle name
   handle: (name) ->
 
-   rate.els[name].slide.unbind('drag', rate.dragevent)
+   rate.els[name].slide.unbind 'drag', rate.dragevent
    rate.els[name].slide.on 'drag', {name: name}, rate.dragevent
 
   #drag handler

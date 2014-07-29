@@ -13,8 +13,8 @@ rate = {
     rate.el = $(name);
     rate.els[name].slide = $(rate.el.find('.slide'));
     rate.els[name].slider = $(rate.el.find('.slider'));
-    rate.points[name].start = -(rate.els[name].slide.width() / 2);
-    rate.points[name].end = rate.els[name].slider.width() - (rate.els[name].slide.width() / 2);
+    rate.points[name].start = -(rate.els[name].slide.width() / 2) - 15;
+    rate.points[name].end = rate.els[name].slider.width() - (rate.els[name].slide.width() / 2) - 15;
     rate.el.find('.zone').each(function(i, el) {
       rate.zones[name].push({
         el: $(el),

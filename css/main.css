@@ -163,14 +163,14 @@ body {
 }
 .rateframe > .rates > .rate > .graph {
   position: relative;
-  margin: 0 1.3em 0 0.8em;
+  margin: 0 2em 0 0;
 }
 .rateframe > .rates > .rate > .graph > .flatrate {
   position: absolute;
   top: 7em;
   left: 2.5em;
   border-bottom: 0.1em solid #c8c8c8;
-  width: 43em;
+  width: 38.5em;
 }
 .rateframe > .rates > .rate > .graph > .flatrate.higher {
   top: 5.35em;
@@ -1319,7 +1319,7 @@ body {
 }
 .rateframe > .rates > .rate > .slider {
   height: 4em;
-  margin: 1em 1.5em 0 0.75em;
+  margin: 1em 2em 0 2em;
   position: relative;
 }
 .rateframe > .rates > .rate > .slider > .slide {
@@ -1379,7 +1379,6 @@ body {
 .rateframe > .rates > .rate > .slider > .slide > .inner > .price {
   font-size: 1.5em;
   color: #44c8f5;
-  padding: 0 0.4em;
   font-weight: bold;
 }
 .rateframe > .rates > .rate > .slider > .slide > .inner > .copy {
@@ -1409,7 +1408,7 @@ body {
 .rateframe > .rates > .rate > .slider > .slide > .inner > .price {
   font-size: 1.5em;
   color: #0089c4;
-  padding: 0 0.5em;
+  padding: 0 0.2em;
 }
 .rateframe > .rates > .rate > .slider > .slide > .inner > .copy {
   color: #5ac0e5;
@@ -1427,7 +1426,7 @@ body {
   background-color: #c8c8c8;
   -webkit-border-radius: 1em;
   border-radius: 1em;
-  margin: 2em 0 0 2em;
+  margin: 1.5em 0 0 0;
 }
 .rateframe > .footer {
   padding: 0 1em 1em 1em;
@@ -1462,16 +1461,16 @@ body {
   margin-top: 0.7em;
 }
 .rate_ag4a_summer > .graph > .bottommeasure > .measure.m1 {
-  width: 19.4em;
+  width: 19.5em;
 }
 .rate_ag4a_summer > .graph > .bottommeasure > .measure.m2 {
-  width: 9.7em;
+  width: 9.8em;
 }
 .rate_ag4a_summer > .graph > .bottommeasure > .measure.m3 {
   width: 9.7em;
 }
 .rate_ag4a_summer > .graph > .bottomtext > .measure.m1 {
-  width: 19.4em;
+  width: 18.4em;
 }
 .rate_ag4a_summer > .graph > .bottomtext > .measure.m2 {
   width: 9.7em;
@@ -1482,7 +1481,7 @@ body {
 .rate_ag4a_winter > .graph > .inner > .zone.z1 {
   left: 0;
   width: 13.9em;
-  height: 4.8em;
+  height: 3.2em;
 }
 .rate_ag4a_winter > .graph > .inner > .zone.z1 > .dots {
   width: 18em !important;
@@ -1490,7 +1489,7 @@ body {
 .rate_ag4a_winter > .graph > .inner > .zone.z2 {
   left: 14.1em;
   width: 21em;
-  height: 6.4em;
+  height: 4.8em;
 }
 .rate_ag4a_winter > .graph > .inner > .zone.z2 > .dots {
   margin-left: -1em;
@@ -1499,7 +1498,7 @@ body {
 .rate_ag4a_winter > .graph > .inner > .zone.z3 {
   left: 35.3em;
   width: 3.8em;
-  height: 4.8em;
+  height: 3.2em;
 }
 .rate_ag4a_winter > .graph > .inner > .zone.z3 > .dots {
   width: 7em !important;
@@ -1897,7 +1896,7 @@ body {
 }
 .rate_a1_winter > .graph > .inner > .zone.z1 {
   left: 0;
-  width: 13.9em;
+  width: 14em;
   height: 4.8em;
 }
 .rate_a1_winter > .graph > .inner > .zone.z1 > .dots {

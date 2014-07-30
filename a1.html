@@ -10,7 +10,7 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
   </head>
   <body>
-    <div class="rateframe rateframe_a1">
+    <div id="a1_html5" class="rateframe rateframe_a1">
       <div class="topcopy">Choose Winter or Summer.  Drag slider to compare on- and off-peak rates.*</div>
       <div class="buttons buttons_center">
         <div data-rate=".rate_a1_winter" class="button">Winter Rate</div>
@@ -671,25 +671,80 @@
       </div>
       <div class="footer">* Based on A1 rates per kWh as of 5/1/14.  Customer charges apply in addition to the kWh charges<br />&nbsp;&nbsp; shown.  Rates subject to change.  See more details on A1, A6 and A10 business electric rates.</div>
     </div>
+    <div id="a1_flash" class="flashframe">
+      <div id="flashContent">
+        <object id="PGE_TVP_RM_slider-only_1_7_14_434x282" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="434" height="282" align="middle">
+          <param name="movie" value="./flash/PGE_TVP_RM_slider-only_1_7_14_434x282.swf">
+          <param name="quality" value="high">
+          <param name="bgcolor" value="#ffffff">
+          <param name="play" value="true">
+          <param name="loop" value="true">
+          <param name="wmode" value="window">
+          <param name="scale" value="showall">
+          <param name="menu" value="true">
+          <param name="devicefont" value="false">
+          <param name="salign" value="">
+          <param name="allowScriptAccess" value="sameDomain">
+          <!--if !IE-->
+          <object type="application/x-shockwave-flash" data="./flash/PGE_TVP_RM_slider-only_1_7_14_434x282.swf" width="434" height="282">
+            <param name="movie" value="./flash/PGE_TVP_RM_slider-only_1_7_14_434x282.swf">
+            <param name="quality" value="high">
+            <param name="bgcolor" value="#ffffff">
+            <param name="play" value="true">
+            <param name="loop" value="true">
+            <param name="wmode" value="window">
+            <param name="scale" value="showall">
+            <param name="menu" value="true">
+            <param name="devicefont" value="false">
+            <param name="salign" value="">
+            <param name="allowScriptAccess" value="sameDomain">
+            <!-- <![endif]--><a href="http://www.adobe.com/go/getflash"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player"></a>
+            <!--if !IE-->
+          </object>
+          <!-- <![endif]-->
+        </object>
+      </div>
+      <script type="text/javascript">
+        var scripts = {
+          "./jst/": ["main", "pge", "rate"],
+          "./jst/lib/": ["jquery.min", "moment", "jquery.drag"]
+        };
+        
+        loader.scripts = scripts;
+        window.cfg = {"meta":{"title":"Pacific Gas and Electric"}};
+        
+        loader.i( function(result) {
+          if (result) {
+            pge.i();
+            rate.i('.rate_a1_summer');
+          } else {
+            document.getElementById('a1_html5').style.display = 'none';
+            document.getElementById('a1_flash').style.display = 'block';
+          }
+          
+        });
+        
+      </script>
+    </div>
   </body>
-  <script type="text/javascript">
-    var scripts = {
-      "./jst/": ["main", "pge", "rate"],
-      "./jst/lib/": ["jquery.min", "moment", "jquery.drag"]
-    };
+  <!--script(type='text/javascript').
+  var scripts = {
+    "./jst/": ["main", "pge", "rate"],
+    "./jst/lib/": ["jquery.min", "moment", "jquery.drag"]
+  };
+  
+  loader.scripts = scripts;
+  window.cfg = {"meta":{"title":"Pacific Gas and Electric"}};
+  
+  loader.i( function(result) {
+    pge.i();
+    rate.i('.rate_ag4a_summer');
+    rate.i('.rate_ag4a_winter');
     
-    loader.scripts = scripts;
-    window.cfg = {"meta":{"title":"Pacific Gas and Electric"}};
+    rate.i('.rate_a1_summer');
+    rate.i('.rate_a1p_summer');
     
-    loader.i( function(result) {
-      pge.i();
-      rate.i('.rate_ag4a_summer');
-      rate.i('.rate_ag4a_winter');
-      
-      rate.i('.rate_a1_summer');
-      rate.i('.rate_a1p_summer');
-      
-    });
-    
-  </script>
+  });
+  
+  -->
 </html>

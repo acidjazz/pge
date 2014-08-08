@@ -1365,7 +1365,7 @@ body {
 .rateframe > .rates > .rate > .slider > .slide > .inner > .pointer {
   width: 12px;
   height: 6px;
-  margin: -1.1em auto 1em auto;
+  margin: -1em auto 1em auto;
 }
 .rateframe > .rates > .rate > .slider > .slide > .inner > .price {
   font-size: 1.5em;
@@ -1386,7 +1386,7 @@ body {
 .rateframe > .rates > .rate > .slider > .slide > .inner > .pointer {
   width: 12px;
   height: 6px;
-  margin: -1.1em auto 1em auto;
+  margin: -1em auto 1em auto;
 }
 .rateframe > .rates > .rate > .slider > .slide > .inner > .price {
   font-size: 1.5em;

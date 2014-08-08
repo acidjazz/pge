@@ -140,7 +140,7 @@ body {
   margin: 0.2em 0 0 0.2em;
 }
 .rateframe > .rates > .rate > .legend > .legendzone > .color.offpeak {
-  background-color: #44c8f5;
+  background-color: #77d0ee;
 }
 .rateframe > .rates > .rate > .legend > .legendzone > .color.onpeak {
   background-color: #e9b91a;
@@ -181,15 +181,10 @@ body {
 }
 .rateframe > .rates > .rate > .graph > .leftmeasure {
   position: absolute;
-  top: 8em;
-  left: -5.6em;
-  -webkit-transform: rotate(270deg);
-  -moz-transform: rotate(270deg);
-  -o-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  transform: rotate(270deg);
-  border-bottom: 0.1em solid #c8c8c8;
-  width: 12em;
+  top: 1em;
+  left: -1.6em;
+  width: 18px;
+  height: 141px;
   padding: 0 0 0 2em;
 }
 .rateframe > .rates > .rate > .graph > .inner {
@@ -224,7 +219,7 @@ body {
   animation: dotIn 0.5s 0s ease-in-out both;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone > .dots > .dot.bluedot {
-  background-color: #44c8f5;
+  background-color: #77d0ee;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone > .dots > .dot.orangedot {
   background-color: #e9b91a;
@@ -1286,13 +1281,13 @@ body {
   animation-delay: 2s;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone.full > .dots > .dot.bluedot {
-  background-color: #44c8f5;
+  background-color: #00beff;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone.full > .dots > .dot.orangedot {
-  background-color: #e9b91a;
+  background-color: #ffc400;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone.full > .dots > .dot.partialdot {
-  background-color: #ced1a8;
+  background-color: #d8df86;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone.full.z6 > .dots > .dot.orangedot {
   background-color: #e9b91a, 0.7 !important;
@@ -1382,7 +1377,7 @@ body {
 }
 .rateframe > .rates > .rate > .slider > .slide > .inner > .price {
   font-size: 1.5em;
-  color: #44c8f5;
+  color: #77d0ee;
   font-weight: bold;
 }
 .rateframe > .rates > .rate > .slider > .slide > .inner > .copy {

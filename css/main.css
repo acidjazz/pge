@@ -1363,17 +1363,9 @@ body {
   transform: scale(1.2);
 }
 .rateframe > .rates > .rate > .slider > .slide > .inner > .pointer {
-  width: 1em;
-  height: 1em;
-  border-top: 0.1em solid #808285;
-  border-left: 0.1em solid #808285;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  margin: -0.6em auto 0 auto;
-  background-color: #f7f7f8;
+  width: 12px;
+  height: 6px;
+  margin: -1.1em auto 1em auto;
 }
 .rateframe > .rates > .rate > .slider > .slide > .inner > .price {
   font-size: 1.5em;
@@ -1392,17 +1384,9 @@ body {
   position: relative;
 }
 .rateframe > .rates > .rate > .slider > .slide > .inner > .pointer {
-  width: 1em;
-  height: 1em;
-  border-top: 0.1em solid #808285;
-  border-left: 0.1em solid #808285;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  margin: -0.6em auto 0 auto;
-  background-color: #f7f7f8;
+  width: 12px;
+  height: 6px;
+  margin: -1.1em auto 1em auto;
 }
 .rateframe > .rates > .rate > .slider > .slide > .inner > .price {
   font-size: 1.5em;

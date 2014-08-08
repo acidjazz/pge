@@ -164,13 +164,13 @@ body
                 transition background 0.2s linear
                 animation dotIn 0.5s 0s ease-in-out both
                 &.bluedot
-                  background-color rgba(c_blue, 0.8)
+                  background-color c_blue
                 &.orangedot
-                  background-color rgba(c_orange, 0.7)
+                  background-color c_orange
                 &.partialdot
-                  background-color rgba(c_partial, 0.8)
+                  background-color c_partial
                 &.boldorangedot
-                  background-color rgba(c_bold_orange, 0.7)
+                  background-color c_bold_orange
               for r in 1..150
                 .dot:nth-child({r})
                   animation-delay (r / 75)s
@@ -181,7 +181,7 @@ body
             &.full > .dots > .dot.partialdot
               background-color c_partial
             &.full.z6 > .dots > .dot.orangedot
-              background-color rgba(c_orange, 0.7) !important
+              background-color c_orange, 0.7 !important
             &.full > .dots > .dot.boldorangedot
               background-color c_bold_orange
 

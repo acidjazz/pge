@@ -31,7 +31,6 @@ rate = {
     return rate.handle(name);
   },
   handle: function(name) {
-    rate.els[name].slide.unbind('drag', rate.dragevent);
     return rate.els[name].slide.on('drag', {
       name: name
     }, rate.dragevent);
@@ -49,7 +48,7 @@ rate = {
   },
   linedup: function(rect, name) {
     var i, middle, zone, _i, _len, _ref;
-    middle = rect.left + (rect.width / 2);
+    middle = rect.left + ((rect.right - rect.left) / 2);
     _ref = rate.zones[name];
     for (i = _i = 0, _len = _ref.length; _i < _len; i = ++_i) {
       zone = _ref[i];
@@ -62,7 +61,7 @@ rate = {
     }
   },
   newprice: function(zone, name) {
-    if (zone.price === void 0 || rate.prices[name] === zone.price || zone.price === void 0) {
+    if (!zone || !zone.price || rate.prices[name] === zone.price) {
       return true;
     }
     rate.els[name].slide.find('.price').html('$' + zone.price);

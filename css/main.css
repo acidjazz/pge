@@ -224,16 +224,16 @@ body {
   animation: dotIn 0.5s 0s ease-in-out both;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone > .dots > .dot.bluedot {
-  background-color: rgba(68,200,245,0.8);
+  background-color: #44c8f5;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone > .dots > .dot.orangedot {
-  background-color: rgba(233,185,26,0.7);
+  background-color: #e9b91a;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone > .dots > .dot.partialdot {
-  background-color: rgba(206,209,168,0.8);
+  background-color: #ced1a8;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone > .dots > .dot.boldorangedot {
-  background-color: rgba(255,171,28,0.7);
+  background-color: #ffab1c;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone > .dots .dot:nth-child(1) {
   -webkit-animation-delay: 0.013333333333333s;
@@ -1295,7 +1295,7 @@ body {
   background-color: #ced1a8;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone.full.z6 > .dots > .dot.orangedot {
-  background-color: rgba(233,185,26,0.7) !important;
+  background-color: #e9b91a, 0.7 !important;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone.full > .dots > .dot.boldorangedot {
   background-color: #ffab1c;

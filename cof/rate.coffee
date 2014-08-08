@@ -33,9 +33,10 @@ rate =
 
     #$('.rates').on 'drag', "#{name} > .slider > .slide", {name: name}, rate.dragevent
     rate.handle name
+
   handle: (name) ->
 
-   rate.els[name].slide.unbind 'drag', rate.dragevent
+   #rate.els[name].slide.unbind 'drag', rate.dragevent
    rate.els[name].slide.on 'drag', {name: name}, rate.dragevent
 
   #drag handler
@@ -53,7 +54,10 @@ rate =
   # return the price of the lined up zone
   linedup: (rect, name) ->
 
-    middle = rect.left + (rect.width/2)
+    #no .width in ie8
+    middle = rect.left + ((rect.right-rect.left)/2)
+    #middle = rect.left + (rect.width/2)
+    #
 
     for zone, i in rate.zones[name]
       if middle > zone.rect.left and zone.rect.right > middle
@@ -61,7 +65,7 @@ rate =
   
   # update the price if we have a new one
   newprice: (zone, name) ->
-    return true if zone.price is undefined or rate.prices[name] is zone.price or zone.price is undefined
+    return true if !zone or !zone.price or rate.prices[name] is zone.price
     rate.els[name].slide.find('.price').html '$' + zone.price
     rate.prices[name] = zone.price
     $('.zone').removeClass 'full'

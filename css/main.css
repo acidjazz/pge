@@ -140,13 +140,13 @@ body {
   margin: 0.2em 0 0 0.2em;
 }
 .rateframe > .rates > .rate > .legend > .legendzone > .color.offpeak {
-  background-color: #77d0ee;
+  background-color: #44c8f5;
 }
 .rateframe > .rates > .rate > .legend > .legendzone > .color.onpeak {
-  background-color: #e9b91a;
+  background-color: #fcc766;
 }
 .rateframe > .rates > .rate > .legend > .legendzone > .color.partialpeak {
-  background-color: #cfd0a9;
+  background-color: #ced1a8;
 }
 .rateframe > .rates > .rate > .legend > .legendzone > .color.eventpeak {
   background-color: #ffab1c;
@@ -155,7 +155,7 @@ body {
   margin: 0 1em 0 1.5em;
 }
 .rateframe > .rates > .rate > .title {
-  color: #e9b91a;
+  color: #fcc766;
   font-size: 1.4em;
   margin: 0.5em 10em 0.5em 1.7em;
   padding-top: 1em;
@@ -219,13 +219,13 @@ body {
   animation: dotIn 0.5s 0s ease-in-out both;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone > .dots > .dot.bluedot {
-  background-color: #77d0ee;
+  background-color: #44c8f5;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone > .dots > .dot.orangedot {
-  background-color: #e9b91a;
+  background-color: #fcc766;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone > .dots > .dot.partialdot {
-  background-color: #cfd0a9;
+  background-color: #ced1a8;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone > .dots > .dot.boldorangedot {
   background-color: #ffab1c;
@@ -1281,19 +1281,19 @@ body {
   animation-delay: 2s;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone.full > .dots > .dot.bluedot {
-  background-color: #00beff;
+  background-color: #3db3dc;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone.full > .dots > .dot.orangedot {
-  background-color: #ffc400;
+  background-color: #e2b25b;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone.full > .dots > .dot.partialdot {
-  background-color: #baba97;
+  background-color: #b9bb96;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone.full.z6 > .dots > .dot.orangedot {
-  background-color: #e9b91a, 0.7 !important;
+  background-color: #fcc766, 0.7 !important;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone.full > .dots > .dot.boldorangedot {
-  background-color: #ffab1c;
+  background-color: #e59919;
 }
 .rateframe > .rates > .rate > .graph > .bottommeasure,
 .rateframe > .rates > .rate > .graph .bottomtext {
@@ -1369,7 +1369,7 @@ body {
 }
 .rateframe > .rates > .rate > .slider > .slide > .inner > .price {
   font-size: 1.5em;
-  color: #77d0ee;
+  color: #44c8f5;
   font-weight: bold;
 }
 .rateframe > .rates > .rate > .slider > .slide > .inner > .copy {

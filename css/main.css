@@ -146,7 +146,7 @@ body {
   background-color: #e9b91a;
 }
 .rateframe > .rates > .rate > .legend > .legendzone > .color.partialpeak {
-  background-color: #ced1a8;
+  background-color: #cfd0a9;
 }
 .rateframe > .rates > .rate > .legend > .legendzone > .color.eventpeak {
   background-color: #ffab1c;
@@ -225,7 +225,7 @@ body {
   background-color: #e9b91a;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone > .dots > .dot.partialdot {
-  background-color: #ced1a8;
+  background-color: #cfd0a9;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone > .dots > .dot.boldorangedot {
   background-color: #ffab1c;
@@ -1287,7 +1287,7 @@ body {
   background-color: #ffc400;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone.full > .dots > .dot.partialdot {
-  background-color: #d8df86;
+  background-color: #baba97;
 }
 .rateframe > .rates > .rate > .graph > .inner > .zone.full.z6 > .dots > .dot.orangedot {
   background-color: #e9b91a, 0.7 !important;

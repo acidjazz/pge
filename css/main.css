@@ -1416,6 +1416,12 @@ body {
   font-size: 0.8em;
   line-height: 1em;
 }
+.rateframe > .footer > .star {
+  float: left;
+}
+.rateframe > .footer > .copy {
+  margin: 0 0 0 0.75em;
+}
 .rate_ag4a_summer > .graph > .inner > .zone.z1 {
   left: 0;
   width: 19.4em;
